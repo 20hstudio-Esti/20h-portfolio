@@ -442,7 +442,7 @@ p {
 .hero__subtitle {
   font-size: clamp(1.05rem, 2vw, 1.2rem);
   color: var(--color-text-tertiary);
-  max-width: 560px;
+  max-width: 640px;
   margin: 0 auto 48px;
   line-height: 1.7;
 }
