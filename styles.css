@@ -1183,8 +1183,12 @@ p {
 }
 
 .language-item__flag {
-  font-size: 2rem;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.language-item__flag img {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .language-item__name {
