@@ -436,12 +436,7 @@ p {
 .hero h1 {
   max-width: 1000px;
   margin: 0 auto 24px;
-  font-size: clamp(2rem, 4.2vw, 3rem);
-}
-
-.hero__line1 {
-  color: var(--color-accent);
-  text-transform: lowercase;
+  font-size: clamp(1.8rem, 3.8vw, 2.8rem);
 }
 
 .hero__subtitle {
