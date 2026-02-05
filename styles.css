@@ -28,6 +28,43 @@
   --transition-slow: 0.5s ease;
 }
 
+/* --- Lucide Icons --- */
+.lucide-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+}
+
+.service-card__icon .lucide-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-accent);
+}
+
+.contact-info__icon .lucide-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--color-accent);
+}
+
+.social-link .lucide-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.lucide-inline {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.language-item__flag .lucide-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-accent);
+}
+
 /* --- Reset & Base --- */
 *,
 *::before,
@@ -370,11 +407,13 @@ p {
   color: var(--color-accent-hover);
 }
 
-.btn--ghost .arrow {
+.btn--ghost .arrow,
+.btn--ghost .lucide-inline {
   transition: transform var(--transition);
 }
 
-.btn--ghost:hover .arrow {
+.btn--ghost:hover .arrow,
+.btn--ghost:hover .lucide-inline {
   transform: translateX(4px);
 }
 
@@ -907,11 +946,13 @@ p {
   color: var(--color-accent);
 }
 
-.case-study__back .arrow {
+.case-study__back .arrow,
+.case-study__back .lucide-inline {
   transition: transform var(--transition);
 }
 
-.case-study__back:hover .arrow {
+.case-study__back:hover .arrow,
+.case-study__back:hover .lucide-inline {
   transform: translateX(-4px);
 }
 
