@@ -528,7 +528,7 @@ p {
 }
 
 .section--dark .service-card__icon {
-  background-color: rgba(240, 165, 67, 0.15);
+  background-color: transparent;
 }
 
 .service-card:hover {
@@ -537,15 +537,11 @@ p {
 }
 
 .service-card__icon {
-  width: 48px;
-  height: 48px;
-  background-color: var(--color-bg-alt);
-  border-radius: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 20px;
   font-size: 1.3rem;
+  color: var(--color-accent);
 }
 
 .service-card h3 {
@@ -1308,15 +1304,12 @@ p {
 }
 
 .contact-info__icon {
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
-  background-color: var(--color-bg-alt);
-  border-radius: 12px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
+  color: var(--color-accent);
 }
 
 .contact-info__text h4 {
