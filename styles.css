@@ -1173,7 +1173,7 @@ p {
 
 .languages-row {
   display: flex;
-  gap: 48px;
+  gap: 64px;
   margin-top: 40px;
   flex-wrap: wrap;
 }
@@ -1187,6 +1187,9 @@ p {
 }
 
 .language-item__flag img {
+  width: 48px;
+  height: 32px;
+  object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
