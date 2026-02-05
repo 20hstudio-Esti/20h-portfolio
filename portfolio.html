@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — twentyhours studio</title>
+  <meta name="description" content="Selected presentation design work by Esti — pitch decks, brand templates, and slide redesigns crafted with intention.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">twentyhours <span>studio</span></a>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+        
+        <a href="contact.html" class="nav__cta">Let's Talk</a>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-spacer"></div>
+
+  <!-- Portfolio Hero -->
+  <section class="portfolio-hero section" style="padding-bottom: 0;">
+    <div class="container">
+      <span class="section-header__label">Portfolio</span>
+      <h1>Work that speaks for itself.</h1>
+      <p style="max-width: 560px; margin: 16px auto 0; color: var(--color-text-tertiary);">Each project is a story of clarity, transforming ideas into presentations that connect, persuade, and inspire.</p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs + Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="pitch-deck">Pitch Decks</button>
+        <button class="filter-tab" data-filter="template">Templates</button>
+        <button class="filter-tab" data-filter="redesign">Redesign</button>
+        <button class="filter-tab" data-filter="showcase">Showcase</button>
+      </div>
+
+      <div class="projects-grid">
+        <a href="projects/before-after-redesign.html" class="project-card fade-in" data-category="redesign" style="transition: opacity 0.3s, transform 0.3s;">
+          <div class="project-card__image" style="background-color: #E8D5B5;">Slide Redesign Preview</div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Slide Redesign</span>
+            <h3>Before & After — Slide Redesign</h3>
+            <p>From one text-heavy slide to five illustrated stories.</p>
+          </div>
+        </a>
+
+        <a href="projects/b2b-consulting-template.html" class="project-card fade-in" data-category="template" style="transition: opacity 0.3s, transform 0.3s;">
+          <div class="project-card__image" style="background-color: #D4C5A9;">B2B Template Preview</div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Brand Template</span>
+            <h3>B2B Consulting — PowerPoint Template</h3>
+            <p>Complete visual identity built from scratch.</p>
+          </div>
+        </a>
+
+        <a href="projects/tinderprofile-pitch-deck.html" class="project-card fade-in" data-category="pitch-deck" style="transition: opacity 0.3s, transform 0.3s;">
+          <div class="project-card__image" style="background-color: #C9B896;">Pitch Deck Preview</div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Pitch Deck</span>
+            <h3>TinderProfile.ai — Investor Pitch Deck</h3>
+            <p>AI startup pitch deck with modern, engaging storytelling.</p>
+          </div>
+        </a>
+
+        <a href="projects/corporate-slide-deck.html" class="project-card fade-in" data-category="redesign" style="transition: opacity 0.3s, transform 0.3s;">
+          <div class="project-card__image" style="background-color: #BEA983;">Corporate Deck Preview</div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Slide Redesign</span>
+            <h3>Modern Corporate — Dual Theme Deck</h3>
+            <p>Two versions, one brand, dark and light themes.</p>
+          </div>
+        </a>
+
+        <a href="projects/crane-brand-template.html" class="project-card fade-in" data-category="template" style="transition: opacity 0.3s, transform 0.3s;">
+          <div class="project-card__image" style="background-color: #D9CAB0;">Brand Template Preview</div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Brand Template</span>
+            <h3>Crane — Custom Brand Template</h3>
+            <p>Polished, reusable template reflecting brand identity.</p>
+          </div>
+        </a>
+
+        <a href="projects/style-explorations.html" class="project-card fade-in" data-category="showcase" style="transition: opacity 0.3s, transform 0.3s;">
+          <div class="project-card__image" style="background-color: #CEBFA3;">Style Showcase Preview</div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Design Showcase</span>
+            <h3>Style Explorations — Three Directions</h3>
+            <p>Bold, minimal, and corporate, three distinct visual styles.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section section--dark">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-header__label">Like What You See?</span>
+        <h2>Let's create something together.</h2>
+        <p>Every project starts with a conversation. Tell me about your presentation needs and I'll share how I can help.</p>
+        <a href="contact.html" class="btn btn--primary">Start a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="color: var(--color-bg);">twentyhours <span style="color: rgba(245,242,236,0.5);">studio</span></a>
+          <p>Intentional presentation design, delivered across time zones. By the time you open your laptop, your slides are ready.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Pages</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="portfolio.html">Pitch Decks</a></li>
+            <li><a href="portfolio.html">Brand Templates</a></li>
+            <li><a href="portfolio.html">Slide Redesign</a></li>
+            <li><a href="contact.html">Design Consult</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:email@twentyhoursstudio.com">Email</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 twentyhours studio. All rights reserved.</span>
+        <span>Designed with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
