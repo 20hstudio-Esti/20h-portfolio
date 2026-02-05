@@ -1180,6 +1180,7 @@ p {
 
 .language-item {
   text-align: center;
+  width: 100px;
 }
 
 .language-item__flag {
@@ -1187,11 +1188,13 @@ p {
 }
 
 .language-item__flag img {
-  width: 48px;
-  height: 32px;
+  width: 56px;
+  height: 38px;
   object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 0 auto;
 }
 
 .language-item__name {
