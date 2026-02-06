@@ -1981,8 +1981,17 @@ div.portfolio-item__image {
   padding: 60px 0;
 }
 
+.next-steps-section-light .next-steps__title h2 {
+  color: var(--color-text);
+}
+
 .next-steps-section-light .next-steps__number {
   color: var(--color-accent);
+  border-color: var(--color-divider);
+}
+
+.next-steps-section-light .next-steps__item {
+  color: var(--color-text);
 }
 
 .next-steps-section-light .next-steps__item h3 {
