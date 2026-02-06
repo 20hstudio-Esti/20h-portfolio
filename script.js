@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Filter Tabs (Portfolio Page) ---
   const filterTabs = document.querySelectorAll('.filter-tab');
-  const portfolioItems = document.querySelectorAll('.portfolio-item[data-category]');
+  const portfolioCards = document.querySelectorAll('.portfolio-card[data-category]');
 
-  if (filterTabs.length > 0 && portfolioItems.length > 0) {
+  if (filterTabs.length > 0 && portfolioCards.length > 0) {
     filterTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         // Update active tab
@@ -35,18 +35,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const filter = tab.dataset.filter;
 
-        portfolioItems.forEach(item => {
-          if (filter === 'all' || item.dataset.category === filter) {
-            item.style.display = '';
+        portfolioCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
             setTimeout(() => {
-              item.style.opacity = '1';
-              item.style.transform = 'translateY(0)';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
             }, 10);
           } else {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(10px)';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(10px)';
             setTimeout(() => {
-              item.style.display = 'none';
+              card.style.display = 'none';
             }, 300);
           }
         });

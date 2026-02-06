@@ -1929,3 +1929,48 @@ div.portfolio-item__image {
     --section-padding: 48px;
   }
 }
+
+/* --- Portfolio Grid (PitchStudio Style) --- */
+.portfolio-grid-ps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card__collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4px;
+  background-color: #1a1a1a;
+}
+
+.portfolio-card__collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid-ps {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+}
