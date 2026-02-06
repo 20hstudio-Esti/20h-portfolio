@@ -85,8 +85,11 @@
 
 /* Bottom Navigation */
 .project-nav {
+  display: block !important;
   background-color: #F5F2EC;
   padding: 20px 24px;
+  border-top: none;
+  margin-top: 0;
 }
 
 .project-nav__inner {
