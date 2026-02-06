@@ -1465,8 +1465,14 @@ div.portfolio-item__image {
 }
 
 .language-item__flag {
-  font-size: 3rem;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.language-item__flag img {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .language-item__name {
