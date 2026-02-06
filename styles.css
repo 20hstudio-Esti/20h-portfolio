@@ -1890,6 +1890,10 @@ div.portfolio-item__image {
   margin-right: auto;
 }
 
+.section-divider--on-dark {
+  background-color: rgba(245, 242, 236, 0.2);
+}
+
 /* --- Project Nav (prev/next) --- */
 .project-nav {
   display: flex;
