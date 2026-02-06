@@ -1480,6 +1480,14 @@ div.portfolio-item__image {
   color: var(--color-text-tertiary);
 }
 
+.section--dark .language-item__name {
+  color: var(--color-bg);
+}
+
+.section--dark .language-item__level {
+  color: rgba(245, 242, 236, 0.7);
+}
+
 @media (max-width: 768px) {
   .about-hero {
     grid-template-columns: 1fr;
