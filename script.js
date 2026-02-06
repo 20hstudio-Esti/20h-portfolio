@@ -72,4 +72,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeElements.forEach(el => observer.observe(el));
   }
+
+  // --- Testimonial Carousel ---
+  const carousel = document.querySelector('.testimonial-carousel');
+  if (carousel) {
+    const slides = carousel.querySelectorAll('.testimonial-carousel__slide');
+    const prevBtn = carousel.querySelector('.testimonial-carousel__arrow--prev');
+    const nextBtn = carousel.querySelector('.testimonial-carousel__arrow--next');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    if (prevBtn && nextBtn && slides.length > 1) {
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      });
+    }
+  }
 });
