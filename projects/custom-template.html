@@ -4,14 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Presentation Template from Existing Slides | twentyhours studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="project-styles.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <nav class="nav">
-    <div class="nav__container">
-      <a href="../index.html" class="nav__logo"><span class="logo-bold">twentyhours</span> studio</a>
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">twentyhours <span>studio</span></a>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav__links">
         <a href="../index.html">Home</a>
         <a href="../portfolio.html">Portfolio</a>
@@ -20,95 +28,94 @@
       </div>
     </div>
   </nav>
+  <div class="nav-spacer"></div>
 
-  <section class="project-hero">
-    <div class="container">
-      <a href="../portfolio.html" class="back-link">
-        <i data-lucide="arrow-left"></i>
-        Back to Portfolio
+  <section class="project-title">
+    <h1>Custom Presentation Template from Existing Slides</h1>
+  </section>
+
+  <section class="project-main">
+    <div class="project-main__inner">
+      <div class="project-info">
+        <div class="project-meta-list">
+          <div class="project-meta-item">
+            <strong>Service:</strong> <span>Template Creation</span>
+          </div>
+          <div class="project-meta-item">
+            <strong>Industry:</strong> <span>Various</span>
+          </div>
+          <div class="project-meta-item">
+            <strong>Deliverable:</strong> <span>Custom Template</span>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3>Client's Goal</h3>
+          <p>Transform a collection of ad-hoc slides into a cohesive, reusable template. The client had accumulated presentations over time but lacked consistency across their materials.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Our Approach</h3>
+          <p>I analyzed the existing slides to identify common patterns and brand elements, then created a unified template system with master slides, consistent styling, and easy-to-use layouts that maintain brand integrity.</p>
+        </div>
+      </div>
+
+      <div class="project-collage">
+        <img src="collages/Custom Presentation Template from Existing Slides.jpg" alt="Custom Presentation Template - Project Collage" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <nav class="project-nav">
+    <div class="project-nav__inner">
+      <a href="creative-portfolio.html" class="project-nav__link">
+        <i data-lucide="chevron-left"></i>
+        Previous
       </a>
-      <h1>Custom Presentation Template from Existing Slides</h1>
-      <div class="project-meta">
-        <div class="project-meta__item">
-          <span class="project-meta__label">Service</span>
-          <span class="project-meta__value">Template Creation</span>
-        </div>
-        <div class="project-meta__item">
-          <span class="project-meta__label">Industry</span>
-          <span class="project-meta__value">Various</span>
-        </div>
-        <div class="project-meta__item">
-          <span class="project-meta__label">Deliverable</span>
-          <span class="project-meta__value">Custom Template</span>
-        </div>
-      </div>
+      <a href="../portfolio.html" class="project-nav__grid">
+        <i data-lucide="grid-3x3"></i>
+      </a>
+      <a href="style-explorations.html" class="project-nav__link project-nav__link--next">
+        Next
+        <i data-lucide="chevron-right"></i>
+      </a>
     </div>
-  </section>
-
-  <section class="section project-description">
-    <div class="container">
-      <div class="project-description__grid">
-        <div class="project-description__block">
-          <h3>The Challenge</h3>
-          <p>Transform a collection of existing slides into a cohesive, professional template. The client had accumulated presentations over time but needed a unified system for future use.</p>
-        </div>
-        <div class="project-description__block">
-          <h3>The Approach</h3>
-          <p>Analyzed the best elements from existing slides, established a consistent design language, and built a flexible template system. The result is a professional template that feels familiar but elevated.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-gallery">
-    <div class="project-gallery__grid">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.38.23.png" alt="Slide 1" loading="lazy">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.38.29.png" alt="Slide 2" loading="lazy">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.38.37.png" alt="Slide 3" loading="lazy">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.38.43.png" alt="Slide 4" loading="lazy">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.38.52.png" alt="Slide 5" loading="lazy">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.39.00.png" alt="Slide 6" loading="lazy">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.39.09.png" alt="Slide 7" loading="lazy">
-      <img src="images/custom-presentation-template-from-existing-slides/Bildschirmfoto 2025-08-27 um 11.39.15.png" alt="Slide 8" loading="lazy">
-    </div>
-  </section>
-
-  <section class="section section--dark next-project">
-    <div class="container">
-      <span class="section-header__label">Next Project</span>
-      <h2>Slide Design Explorations</h2>
-      <a href="style-explorations.html" class="btn btn--primary">View Project</a>
-    </div>
-  </section>
+  </nav>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
+      <div class="footer__inner">
         <div class="footer__brand">
-          <a href="../index.html" class="footer__logo"><span class="logo-bold">twentyhours</span> studio</a>
+          <a href="../index.html" class="nav__logo" style="color: var(--color-bg);">twentyhours <span style="color: rgba(245,242,236,0.5);">studio</span></a>
           <p>Intentional presentation design, delivered across time zones.</p>
         </div>
-        <div class="footer__links">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../portfolio.html">Portfolio</a>
-          <a href="../about.html">About</a>
+        <div>
+          <h4 class="footer__heading">Pages</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
         </div>
-        <div class="footer__links">
-          <h4>Services</h4>
-          <a href="../contact.html">Pitch Decks</a>
-          <a href="../contact.html">Brand Templates</a>
-          <a href="../contact.html">Slide Redesign</a>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="../portfolio.html">Pitch Decks</a></li>
+            <li><a href="../portfolio.html">Brand Templates</a></li>
+            <li><a href="../portfolio.html">Slide Redesign</a></li>
+          </ul>
         </div>
-        <div class="footer__links">
-          <h4>Connect</h4>
-          <a href="mailto:email@twentyhoursstudio.com">Email</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Behance</a>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:email@twentyhoursstudio.com">Email</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2025 twentyhours studio. All rights reserved.</p>
+        <span>© 2025 twentyhours studio. All rights reserved.</span>
+        <span>Designed with intention.</span>
       </div>
     </div>
   </footer>

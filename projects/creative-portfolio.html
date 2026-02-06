@@ -4,14 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creative Portfolio Presentation with Motion | twentyhours studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="project-styles.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <nav class="nav">
-    <div class="nav__container">
-      <a href="../index.html" class="nav__logo"><span class="logo-bold">twentyhours</span> studio</a>
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">twentyhours <span>studio</span></a>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav__links">
         <a href="../index.html">Home</a>
         <a href="../portfolio.html">Portfolio</a>
@@ -20,100 +28,94 @@
       </div>
     </div>
   </nav>
+  <div class="nav-spacer"></div>
 
-  <section class="project-hero">
-    <div class="container">
-      <a href="../portfolio.html" class="back-link">
-        <i data-lucide="arrow-left"></i>
-        Back to Portfolio
+  <section class="project-title">
+    <h1>Creative Portfolio Presentation with Motion</h1>
+  </section>
+
+  <section class="project-main">
+    <div class="project-main__inner">
+      <div class="project-info">
+        <div class="project-meta-list">
+          <div class="project-meta-item">
+            <strong>Service:</strong> <span>Portfolio Design</span>
+          </div>
+          <div class="project-meta-item">
+            <strong>Industry:</strong> <span>Creative Agency</span>
+          </div>
+          <div class="project-meta-item">
+            <strong>Deliverable:</strong> <span>Animated Presentation</span>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3>Client's Goal</h3>
+          <p>Create an eye-catching portfolio presentation for a creative agency pitching to potential clients. The presentation needed to showcase their work while demonstrating their capabilities through the presentation itself.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Our Approach</h3>
+          <p>I designed a visually striking presentation with carefully crafted animations and transitions. Each slide flows seamlessly into the next, creating a memorable viewing experience that reflects the agency's creative expertise.</p>
+        </div>
+      </div>
+
+      <div class="project-collage">
+        <img src="collages/Creative Portfolio Presentation with Motion.jpg" alt="Creative Portfolio Presentation with Motion - Project Collage" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <nav class="project-nav">
+    <div class="project-nav__inner">
+      <a href="investor-pitch-deck.html" class="project-nav__link">
+        <i data-lucide="chevron-left"></i>
+        Previous
       </a>
-      <h1>Creative Portfolio Presentation with Motion</h1>
-      <div class="project-meta">
-        <div class="project-meta__item">
-          <span class="project-meta__label">Service</span>
-          <span class="project-meta__value">Motion Design</span>
-        </div>
-        <div class="project-meta__item">
-          <span class="project-meta__label">Industry</span>
-          <span class="project-meta__value">Creative</span>
-        </div>
-        <div class="project-meta__item">
-          <span class="project-meta__label">Deliverable</span>
-          <span class="project-meta__value">Animated Presentation</span>
-        </div>
-      </div>
+      <a href="../portfolio.html" class="project-nav__grid">
+        <i data-lucide="grid-3x3"></i>
+      </a>
+      <a href="custom-template.html" class="project-nav__link project-nav__link--next">
+        Next
+        <i data-lucide="chevron-right"></i>
+      </a>
     </div>
-  </section>
-
-  <section class="section project-description">
-    <div class="container">
-      <div class="project-description__grid">
-        <div class="project-description__block">
-          <h3>The Challenge</h3>
-          <p>Create a portfolio presentation that showcases creative work with the same level of creativity. Static slides weren't enough — the presentation needed to come alive with motion and energy.</p>
-        </div>
-        <div class="project-description__block">
-          <h3>The Approach</h3>
-          <p>Designed a presentation with carefully crafted animations and transitions that enhance the storytelling. Every motion serves a purpose, guiding the viewer through the creative journey.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-gallery">
-    <div class="project-video">
-      <video controls poster="images/creative-portfolio-presentation-with-motion/Slide2.JPG">
-        <source src="images/creative-portfolio-presentation-with-motion/Creative Portfolio Presentation with Motion.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="project-gallery__grid">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide2.JPG" alt="Slide 2" loading="lazy">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide3.JPG" alt="Slide 3" loading="lazy">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide4.JPG" alt="Slide 4" loading="lazy">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide5.JPG" alt="Slide 5" loading="lazy">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide6.JPG" alt="Slide 6" loading="lazy">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide7.JPG" alt="Slide 7" loading="lazy">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide10.JPG" alt="Slide 10" loading="lazy">
-      <img src="images/creative-portfolio-presentation-with-motion/Slide11.JPG" alt="Slide 11" loading="lazy">
-    </div>
-  </section>
-
-  <section class="section section--dark next-project">
-    <div class="container">
-      <span class="section-header__label">Next Project</span>
-      <h2>Custom Presentation Template</h2>
-      <a href="custom-template.html" class="btn btn--primary">View Project</a>
-    </div>
-  </section>
+  </nav>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
+      <div class="footer__inner">
         <div class="footer__brand">
-          <a href="../index.html" class="footer__logo"><span class="logo-bold">twentyhours</span> studio</a>
+          <a href="../index.html" class="nav__logo" style="color: var(--color-bg);">twentyhours <span style="color: rgba(245,242,236,0.5);">studio</span></a>
           <p>Intentional presentation design, delivered across time zones.</p>
         </div>
-        <div class="footer__links">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../portfolio.html">Portfolio</a>
-          <a href="../about.html">About</a>
+        <div>
+          <h4 class="footer__heading">Pages</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
         </div>
-        <div class="footer__links">
-          <h4>Services</h4>
-          <a href="../contact.html">Pitch Decks</a>
-          <a href="../contact.html">Brand Templates</a>
-          <a href="../contact.html">Slide Redesign</a>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="../portfolio.html">Pitch Decks</a></li>
+            <li><a href="../portfolio.html">Brand Templates</a></li>
+            <li><a href="../portfolio.html">Slide Redesign</a></li>
+          </ul>
         </div>
-        <div class="footer__links">
-          <h4>Connect</h4>
-          <a href="mailto:email@twentyhoursstudio.com">Email</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Behance</a>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:email@twentyhoursstudio.com">Email</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2025 twentyhours studio. All rights reserved.</p>
+        <span>© 2025 twentyhours studio. All rights reserved.</span>
+        <span>Designed with intention.</span>
       </div>
     </div>
   </footer>
