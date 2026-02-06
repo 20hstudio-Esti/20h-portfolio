@@ -1617,7 +1617,8 @@ div.portfolio-item__image {
 }
 
 .contact-main .contact-info__icon {
-  background-color: rgba(240, 165, 67, 0.2);
+  background-color: rgba(245, 242, 236, 0.1);
+  color: var(--color-bg);
 }
 
 .contact-info {
