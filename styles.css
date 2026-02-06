@@ -1466,11 +1466,17 @@ div.portfolio-item__image {
 
 .language-item__flag {
   margin-bottom: 16px;
+  width: 72px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .language-item__flag img {
-  width: 60px;
-  height: auto;
+  width: 72px;
+  height: 48px;
+  object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
