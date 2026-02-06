@@ -863,8 +863,8 @@ p {
 }
 
 /* --- Testimonial Carousel --- */
-.section--testimonial-gradient {
-  background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-text) 50%);
+.testimonial-section-light {
+  background: var(--color-bg);
   padding: 80px 0;
 }
 
@@ -885,25 +885,30 @@ p {
 
 .testimonial-carousel__arrow {
   background: transparent;
-  border: none;
-  color: var(--color-bg);
+  border: 1px solid var(--color-divider);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: var(--color-text);
   cursor: pointer;
-  padding: 8px;
-  opacity: 0.7;
-  transition: opacity var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
 }
 
 .testimonial-carousel__arrow:hover {
-  opacity: 1;
+  background: var(--color-text);
+  color: var(--color-bg);
 }
 
 .testimonial-carousel__arrow svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 .testimonial-carousel__stars {
-  color: var(--color-bg);
+  color: var(--color-accent);
   font-size: 0.9rem;
   letter-spacing: 4px;
   margin-bottom: 32px;
@@ -922,15 +927,15 @@ p {
 }
 
 .testimonial-carousel__slide p {
-  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   font-style: italic;
-  color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 32px;
 }
 
 .testimonial-carousel__quote {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--color-accent);
   font-family: serif;
   line-height: 0.5;
@@ -946,7 +951,7 @@ p {
 .testimonial-carousel__author {
   font-style: normal;
   font-size: 1rem;
-  color: var(--color-bg);
+  color: var(--color-text-tertiary);
   display: block;
 }
 
@@ -1516,7 +1521,19 @@ p {
 }
 
 .form-group input,
-.form-group textarea,
+.form-group textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 14px 16px;
+  border: 1.5px solid var(--color-divider);
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: border-color var(--transition);
+  outline: none;
+}
+
 .form-group select {
   width: 100%;
   font-family: var(--font-body);
@@ -1545,6 +1562,49 @@ p {
 .form-group textarea {
   resize: vertical;
   min-height: 140px;
+}
+
+/* Contact Dark Mode */
+.contact-main .contact-form {
+  background-color: rgba(245, 242, 236, 0.08);
+}
+
+.contact-main .form-group label {
+  color: var(--color-bg);
+}
+
+.contact-main .form-group input,
+.contact-main .form-group textarea,
+.contact-main .form-group select {
+  background-color: rgba(245, 242, 236, 0.1);
+  border-color: rgba(245, 242, 236, 0.2);
+  color: var(--color-bg);
+}
+
+.contact-main .form-group input::placeholder,
+.contact-main .form-group textarea::placeholder {
+  color: rgba(245, 242, 236, 0.5);
+}
+
+.contact-main .form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F5F2EC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+.contact-main .contact-info h3,
+.contact-main .contact-info h4 {
+  color: var(--color-bg);
+}
+
+.contact-main .contact-info__text h4 {
+  color: var(--color-bg);
+}
+
+.contact-main .contact-info__text p {
+  color: rgba(245, 242, 236, 0.75);
+}
+
+.contact-main .contact-info__icon {
+  background-color: rgba(240, 165, 67, 0.2);
 }
 
 .contact-info {
