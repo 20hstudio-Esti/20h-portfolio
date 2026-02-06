@@ -1909,6 +1909,8 @@ div.portfolio-item__image {
 .section-divider--on-dark {
   background-color: #DFD1B3;
   opacity: 0.2;
+  margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 /* --- Project Nav (prev/next) --- */
