@@ -748,7 +748,14 @@ p {
   opacity: 0.9;
 }
 
-.portfolio-item__image {
+img.portfolio-item__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+div.portfolio-item__image {
   width: 100%;
   aspect-ratio: 16 / 7;
   display: flex;

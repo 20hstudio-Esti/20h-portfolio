@@ -1,0 +1,154 @@
+/* Project Page Styles */
+
+.project-hero {
+  padding: 140px 0 60px;
+  background-color: var(--color-bg);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  transition: color var(--transition);
+}
+
+.back-link:hover {
+  color: var(--color-accent);
+}
+
+.back-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.project-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 32px;
+  max-width: 800px;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.project-meta__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-meta__label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.project-meta__value {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* Project Description */
+.project-description {
+  padding: 60px 0;
+}
+
+.project-description__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  max-width: 900px;
+}
+
+.project-description__block h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.project-description__block p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* Project Gallery */
+.project-gallery {
+  background-color: var(--color-text);
+  padding: 40px 0;
+}
+
+.project-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.project-gallery__grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform var(--transition);
+}
+
+.project-gallery__grid img:hover {
+  transform: scale(1.02);
+}
+
+/* Full width single images */
+.project-gallery__full {
+  grid-column: 1 / -1;
+}
+
+/* Video container */
+.project-video {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 24px;
+}
+
+.project-video video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Next Project CTA */
+.next-project {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.next-project .section-header__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.next-project h2 {
+  color: var(--color-bg);
+  margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-meta {
+    gap: 24px;
+  }
+  
+  .project-description__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .project-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
