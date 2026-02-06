@@ -1907,7 +1907,8 @@ div.portfolio-item__image {
 }
 
 .section-divider--on-dark {
-  background-color: rgba(245, 242, 236, 0.08);
+  background-color: #DFD1B3;
+  opacity: 0.2;
 }
 
 /* --- Project Nav (prev/next) --- */
