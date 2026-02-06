@@ -1461,7 +1461,9 @@ div.portfolio-item__image {
 
 .language-item {
   text-align: center;
-  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .language-item__flag {
