@@ -507,7 +507,7 @@ p {
 /* --- Services Grid --- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 48px;
   align-items: stretch;
