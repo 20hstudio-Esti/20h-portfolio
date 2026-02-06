@@ -590,6 +590,7 @@ p {
 
 .service-showcase-item {
   color: var(--color-bg);
+  text-align: center;
 }
 
 .service-showcase-icon {
@@ -597,6 +598,9 @@ p {
   height: 28px;
   color: var(--color-accent);
   margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-showcase-item h3 {
