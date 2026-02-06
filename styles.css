@@ -1907,11 +1907,13 @@ div.portfolio-item__image {
 }
 
 .section-divider--on-dark {
-  background-color: #DFD1B3 !important;
-  width: 90% !important;
-  max-width: 1100px;
+  background: linear-gradient(to right, transparent, rgba(223, 209, 179, 0.35) 10%, rgba(223, 209, 179, 0.35) 90%, transparent) !important;
+  border: none !important;
   height: 1px !important;
-  opacity: 0.3;
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
 /* --- Project Nav (prev/next) --- */
