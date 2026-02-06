@@ -2006,7 +2006,7 @@ div.portfolio-item__image {
 }
 
 .next-steps-section-light .next-steps__number {
-  color: var(--color-accent);
+  color: var(--color-text);
   border-color: var(--color-divider);
 }
 
