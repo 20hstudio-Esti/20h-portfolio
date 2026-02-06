@@ -889,10 +889,11 @@ div.portfolio-item__image {
 
 .testimonial-carousel__nav {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  right: -80px;
+  transform: translateY(-50%);
   display: flex;
-  gap: 16px;
+  gap: 12px;
 }
 
 .testimonial-carousel__arrow {
@@ -965,10 +966,6 @@ div.portfolio-item__image {
   font-size: 1rem;
   color: var(--color-text-tertiary);
   display: block;
-}
-
-.testimonial-carousel__author::before {
-  content: "— ";
 }
 
 /* --- Next Steps Section --- */
