@@ -1974,3 +1974,21 @@ div.portfolio-item__image {
     padding: 0 16px;
   }
 }
+
+/* --- Next Steps Light Version --- */
+.next-steps-section-light {
+  background-color: var(--color-bg);
+  padding: 60px 0;
+}
+
+.next-steps-section-light .next-steps__number {
+  color: var(--color-accent);
+}
+
+.next-steps-section-light .next-steps__item h3 {
+  color: var(--color-text);
+}
+
+.next-steps-section-light .next-steps__item p {
+  color: var(--color-text-secondary);
+}
