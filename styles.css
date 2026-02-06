@@ -1885,6 +1885,14 @@ div.portfolio-item__image {
   max-width: calc(var(--max-width) - 48px);
 }
 
+.section-divider--dark {
+  background-color: rgba(245, 242, 236, 0.15);
+  max-width: 100%;
+  width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* --- Project Nav (prev/next) --- */
 .project-nav {
   display: flex;
