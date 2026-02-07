@@ -1061,9 +1061,11 @@ div.portfolio-item__image {
   justify-content: center;
   width: 48px;
   height: 48px;
-  border: 1px solid rgba(245, 242, 236, 0.3);
+  border: 1.5px solid var(--color-text-tertiary);
   border-radius: 50%;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
   margin-bottom: 20px;
 }
 
@@ -1875,7 +1877,7 @@ div.portfolio-item__image {
 
 /* --- FAQ --- */
 #faq {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 120px;
 }
 
 .faq-list {
@@ -2105,7 +2107,7 @@ div.portfolio-item__image {
 
 .next-steps-section-light .next-steps__number {
   color: var(--color-text);
-  border-color: var(--color-divider);
+  border-color: var(--color-text-tertiary);
 }
 
 .next-steps-section-light .next-steps__item {
