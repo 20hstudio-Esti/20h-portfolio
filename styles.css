@@ -324,6 +324,10 @@ p {
 }
 
 @media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
   .nav__toggle {
     display: flex;
     position: relative;
