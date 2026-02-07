@@ -323,9 +323,17 @@ p {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .desktop-only {
     display: none;
+  }
+
+  .mobile-only {
+    display: inline;
   }
 
   .nav__toggle {
