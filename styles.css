@@ -1908,6 +1908,7 @@ div.portfolio-item__image {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 
 .faq-item summary::-webkit-details-marker {
