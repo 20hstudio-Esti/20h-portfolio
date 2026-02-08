@@ -1194,24 +1194,19 @@ div.portfolio-item__image {
 
 @media (max-width: 768px) {
   .footer__inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
   }
 
   .footer__brand {
     grid-column: 1 / -1;
+    margin-bottom: 16px;
   }
 
   .footer__bottom {
     flex-direction: column;
     gap: 12px;
     text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer__inner {
-    grid-template-columns: 1fr;
   }
 }
 
