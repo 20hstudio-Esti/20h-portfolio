@@ -1794,13 +1794,14 @@ div.portfolio-item__image {
   height: 20px;
 }
 
-.social-link--behance {
+.social-link--orange {
   background-color: var(--color-accent);
-  color: var(--color-white);
+  color: var(--color-text);
 }
 
-.social-link--behance:hover {
+.social-link--orange:hover {
   background-color: var(--color-accent-hover);
+  color: var(--color-text);
 }
 
 @media (max-width: 768px) {
