@@ -1804,12 +1804,6 @@ div.portfolio-item__image {
   color: var(--color-text);
 }
 
-.social-link--behance {
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: -0.5px;
-}
-
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
