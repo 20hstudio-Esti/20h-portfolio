@@ -1794,15 +1794,6 @@ div.portfolio-item__image {
   height: 20px;
 }
 
-.social-link--linkedin {
-  color: #0A66C2;
-}
-
-.social-link--linkedin:hover {
-  background-color: #0A66C2;
-  color: var(--color-white);
-}
-
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
