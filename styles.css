@@ -1794,6 +1794,15 @@ div.portfolio-item__image {
   height: 20px;
 }
 
+.social-link--behance {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.social-link--behance:hover {
+  background-color: var(--color-accent-hover);
+}
+
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
