@@ -291,6 +291,25 @@ p {
   display: none !important;
 }
 
+.nav__links a.nav__lang {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 1px solid var(--color-text-tertiary);
+  border-radius: 4px;
+  color: var(--color-text-secondary);
+  transition: all var(--transition);
+}
+
+.nav__links a.nav__lang:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.nav__links a.nav__lang::after {
+  display: none !important;
+}
+
 /* Mobile Menu */
 .nav__toggle {
   display: none;
