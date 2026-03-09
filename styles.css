@@ -1,5 +1,5 @@
 /* ============================================
-   twentyhours studio — Main Stylesheet
+   twentyhours studio  -  Main Stylesheet
    ============================================ */
 
 /* --- CSS Custom Properties --- */
@@ -19,7 +19,7 @@
 
   --max-width: 1200px;
   --max-width-narrow: 800px;
-  --nav-height: 72px;
+  --nav-height: 82px;
   --section-padding: 100px;
   --border-radius: 8px;
   --border-radius-lg: 16px;
@@ -212,7 +212,6 @@ p {
   border-bottom: 1px solid var(--color-divider);
   height: var(--nav-height);
   transition: background-color var(--transition);
-  contain: layout;
 }
 
 .nav__inner {
@@ -231,10 +230,9 @@ p {
 }
 
 .nav__logo img {
-  height: 50px;
+  height: 62px;
   width: auto;
   display: block;
-  min-height: 50px;
 }
 
 .nav__logo--text {
@@ -260,64 +258,86 @@ p {
   font-weight: 450;
   color: var(--color-text-tertiary);
   position: relative;
-  padding: 8px 0;
-  line-height: 1.2;
+  height: 40px;
   display: inline-flex;
   align-items: center;
-  height: 100%;
-}
-
-.nav__links a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background-color: var(--color-accent);
-  transition: width var(--transition);
+  justify-content: center;
+  padding: 0 0 2px;
+  line-height: 1;
+  vertical-align: middle;
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color var(--transition), color var(--transition), background-color var(--transition), border-color var(--transition);
+  box-sizing: border-box;
 }
 
 .nav__links a:hover,
 .nav__links a.active {
   color: var(--color-text);
+  border-bottom-color: transparent;
 }
 
-.nav__links a:hover::after,
-.nav__links a.active::after {
-  width: 100%;
+.nav__links a.active {
+  font-weight: 700;
 }
 
 .nav__links a.nav__cta {
   font-size: 0.9rem;
   font-weight: 450;
-  padding: 8px 24px;
-  line-height: 1.2;
+  min-width: 118px;
+  height: 40px;
+  padding: 0 24px;
+  line-height: 1;
   white-space: nowrap;
   background-color: var(--color-accent);
   color: var(--color-white) !important;
   border-radius: 100px;
-  transition: background-color var(--transition), transform var(--transition);
+  transition: background-color var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  border-bottom: 1.5px solid transparent;
 }
 
 .nav__links a.nav__cta:hover {
   background-color: var(--color-accent-hover);
-  transform: translateY(-1px);
+  border-bottom-color: transparent;
 }
 
 .nav__links a.nav__cta::after {
   display: none !important;
 }
 
+.nav__links > a:nth-child(1) {
+  width: 56px;
+}
+
+.nav__links > a:nth-child(2) {
+  width: 78px;
+}
+
+.nav__links > a:nth-child(3) {
+  width: 96px;
+  justify-content: flex-start;
+}
+
 .nav__links a.nav__lang {
   font-size: 0.9rem;
   font-weight: 450;
-  padding: 7px 12px;
-  line-height: 1.2;
+  width: 42px;
+  min-width: 42px;
+  height: 40px;
+  padding: 0 12px;
+  line-height: 1;
   border: 1px solid var(--color-text-tertiary);
   border-radius: 4px;
   color: var(--color-text-secondary);
   transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .nav__links a.nav__lang:hover {
@@ -460,25 +480,53 @@ p {
 }
 
 /* --- Hero Section --- */
-.hero {
-  padding: 120px 0 80px;
+.hero,
+.portfolio-hero,
+.contact-hero {
+  padding: 120px 0 48px;
   text-align: center;
 }
 
+.hero > .container,
+.portfolio-hero > .container,
+.contact-hero > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero__badge {
-  display: inline-block;
+  display: block;
   font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--color-accent);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.hero h1,
+.portfolio-hero h1,
+.contact-hero h1 {
+  margin: 0 auto 24px;
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
+  line-height: 1.15;
+  display: block;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .hero h1 {
-  max-width: 1000px;
-  margin: 0 auto 24px;
-  font-size: clamp(2rem, 4.2vw, 3.2rem);
+  max-width: 980px;
+}
+
+.portfolio-hero h1,
+.contact-hero h1 {
+  max-width: 760px;
+}
+
+.hero-line {
+  white-space: nowrap;
 }
 
 .hero__subtitle {
@@ -495,6 +543,12 @@ p {
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+.hero__buttons .btn {
+  width: 190px;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 /* --- Intro / About Snippet --- */
@@ -699,13 +753,13 @@ p {
 }
 
 .section-header__label {
-  display: inline-block;
+  display: block;
   font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--color-accent);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .section-header h2 {
@@ -950,12 +1004,10 @@ div.portfolio-item__image {
 }
 
 .testimonial-carousel__nav {
-  position: absolute;
-  right: 24px;
-  top: -140px;
   display: flex;
+  justify-content: center;
   gap: 12px;
-  z-index: 10;
+  margin: 0 auto 24px;
 }
 
 .testimonial-carousel {
@@ -965,16 +1017,17 @@ div.portfolio-item__image {
 }
 
 .testimonial-carousel__arrow {
-  background: transparent;
-  border: 1px solid var(--color-divider);
+  background: var(--color-bg);
+  border: 1px solid rgba(45, 45, 45, 0.18);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   color: var(--color-text);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 14px rgba(45, 45, 45, 0.08);
   transition: all var(--transition);
 }
 
@@ -1221,8 +1274,12 @@ div.portfolio-item__image {
 
 /* --- Portfolio Page --- */
 .portfolio-hero {
-  padding: 120px 0 48px;
-  text-align: center;
+}
+
+.portfolio-hero h1,
+.contact-hero h1 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .filter-tabs {
@@ -1392,12 +1449,21 @@ div.portfolio-item__image {
   aspect-ratio: 3 / 4;
   background-color: var(--color-bg-alt);
   border-radius: var(--border-radius-lg);
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-text-tertiary);
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+.about-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
 
 .about-hero__content h1 {
@@ -1584,12 +1650,10 @@ div.portfolio-item__image {
 
 /* --- Contact Page --- */
 .contact-hero {
-  text-align: center;
-  padding: 120px 0 48px;
 }
 
 .contact-hero h1 {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .contact-hero p {
@@ -1935,15 +1999,17 @@ div.portfolio-item__image {
 }
 
 /* --- Page Transitions / Fade In --- */
+/* Keep content visible by default so local/Dropbox HTML previews never show
+   large blank gaps or hidden sections while waiting for scroll observers. */
 .fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .fade-in.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* --- Utility Classes --- */
