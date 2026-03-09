@@ -281,6 +281,10 @@ p {
   font-weight: 700;
 }
 
+.nav__links a.nav__cta.active {
+  font-weight: 700;
+}
+
 .nav__links a.nav__cta {
   font-size: 0.9rem;
   font-weight: 450;
