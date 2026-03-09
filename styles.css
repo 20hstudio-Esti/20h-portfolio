@@ -212,6 +212,7 @@ p {
   border-bottom: 1px solid var(--color-divider);
   height: var(--nav-height);
   transition: background-color var(--transition);
+  contain: layout;
 }
 
 .nav__inner {
@@ -233,6 +234,7 @@ p {
   height: 50px;
   width: auto;
   display: block;
+  min-height: 50px;
 }
 
 .nav__logo--text {
@@ -260,6 +262,9 @@ p {
   position: relative;
   padding: 8px 0;
   line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
 }
 
 .nav__links a::after {
