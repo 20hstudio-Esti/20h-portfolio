@@ -1,5 +1,5 @@
 /* ============================================
-   twentyhours studio — Main Scripts
+   twentyhours studio  -  Main Scripts
    ============================================ */
 
 // --- Mobile Menu Toggle ---
@@ -98,5 +98,21 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentIndex);
       });
     }
+  }
+
+  // --- FAQ Accordion (close others when one opens) ---
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (faqItems.length > 0) {
+    faqItems.forEach(item => {
+      item.addEventListener('toggle', () => {
+        if (item.open) {
+          faqItems.forEach(other => {
+            if (other !== item && other.open) {
+              other.open = false;
+            }
+          });
+        }
+      });
+    });
   }
 });
