@@ -96,6 +96,14 @@
   border: none;
 }
 
+.project-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
 /* Bottom Navigation */
 .project-nav {
   display: block !important;
