@@ -1952,6 +1952,27 @@ div.portfolio-item__image {
   }
 }
 
+/* --- Contact hero forced lines --- */
+.hero-copy-lines .hero-copy-line {
+  display: block;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .hero-copy-lines {
+    max-width: 800px !important;
+  }
+
+  .hero-copy-lines .hero-copy-line {
+    display: inline;
+    white-space: normal;
+  }
+
+  .hero-copy-lines .hero-copy-line::after {
+    content: " ";
+  }
+}
+
 /* --- FAQ --- */
 #faq {
   scroll-margin-top: 100px;
