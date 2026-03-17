@@ -7,22 +7,35 @@
   navigation: auto;
 }
 
+/* Keep nav stable during transitions */
+.nav {
+  view-transition-name: nav;
+}
+
+::view-transition-old(nav) {
+  animation: none;
+}
+
+::view-transition-new(nav) {
+  animation: none;
+}
+
 ::view-transition-old(root) {
-  animation: 0.25s cubic-bezier(0.4, 0, 1, 1) both page-out;
+  animation: 0.2s ease-out both fade-out;
 }
 
 ::view-transition-new(root) {
-  animation: 0.3s cubic-bezier(0, 0, 0.2, 1) both page-in;
+  animation: 0.2s ease-in both fade-in;
 }
 
-@keyframes page-out {
-  from { opacity: 1; transform: translateY(0); }
-  to   { opacity: 0; transform: translateY(-8px); }
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 
-@keyframes page-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* --- CSS Custom Properties --- */
