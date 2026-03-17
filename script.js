@@ -22,6 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Scroll Reveal (Dark Sections + Testimonials) ---
+  const revealElements = document.querySelectorAll('.section--dark, .testimonial-card');
+
+  if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  }
+
   // --- Filter Tabs (Portfolio Page) ---
   const filterTabs = document.querySelectorAll('.filter-tab');
   const portfolioCards = document.querySelectorAll('.portfolio-card[data-category]');
