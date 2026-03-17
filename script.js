@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('page-transition-out');
         setTimeout(() => {
           window.location.href = href;
-        }, 300);
+        }, 200);
       });
     }
   });
