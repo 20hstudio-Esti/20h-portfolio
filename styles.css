@@ -622,20 +622,13 @@ p {
 }
 
 .service-card {
-  background-color: #4A3334;
-  color: var(--color-bg);
+  background-color: var(--color-white);
   border-radius: var(--border-radius-lg);
   padding: 36px 28px;
-  border: 2px solid transparent;
-  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition), border-color var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.service-card h3,
-.service-card p {
-  color: var(--color-bg);
 }
 
 .section--dark .service-card {
@@ -658,7 +651,7 @@ p {
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-  background-color: #5E4546;
+  background-color: rgba(74, 51, 52, 0.07);
 }
 
 .service-card:hover .service-card__icon .lucide-icon {
