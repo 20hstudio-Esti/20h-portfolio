@@ -167,18 +167,6 @@ p {
   background-color: var(--color-text-secondary);
 }
 
-/* Testimonial scale-in */
-.testimonial-card {
-  opacity: 0;
-  transform: scale(0.92);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.testimonial-card.revealed {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .section--dark h2,
 .section--dark h3,
 .section--dark h4,
@@ -637,7 +625,8 @@ p {
   background-color: var(--color-white);
   border-radius: var(--border-radius-lg);
   padding: 36px 28px;
-  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
+  border: 2px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition), border-color var(--transition);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -664,6 +653,7 @@ p {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   background-color: rgba(74, 51, 52, 0.07);
+  border: 2px solid var(--color-bg-alt);
 }
 
 .service-card:hover .service-card__icon .lucide-icon {
@@ -944,6 +934,14 @@ div.portfolio-item__image {
   border-radius: var(--border-radius-lg);
   padding: 36px 28px;
   position: relative;
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.testimonial-card.revealed {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .section--dark-mid .testimonial-card,
