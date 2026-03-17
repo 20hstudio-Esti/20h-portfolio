@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Scroll Reveal (Dark Sections + Testimonials) ---
-  const revealElements = document.querySelectorAll('.section--dark, .testimonial-card');
+  // --- Scroll Reveal (Testimonials) ---
+  const revealElements = document.querySelectorAll('.testimonial-card');
 
   if (revealElements.length > 0) {
     const revealObserver = new IntersectionObserver(
