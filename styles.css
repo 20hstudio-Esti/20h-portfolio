@@ -940,13 +940,13 @@ div.portfolio-item__image {
   padding: 36px 28px;
   position: relative;
   opacity: 0;
-  transform: scale(0.92);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: scale(0.85) translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .testimonial-card.revealed {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) translateY(0);
 }
 
 .section--dark-mid .testimonial-card,
