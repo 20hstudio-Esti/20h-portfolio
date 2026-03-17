@@ -2,24 +2,27 @@
    twentyhours studio  -  Main Stylesheet
    ============================================ */
 
-/* --- Page Transition --- */
-body {
-  animation: pageSlideIn 0.25s ease forwards;
-  overflow-x: hidden;
+/* --- Page Transition (View Transitions API) --- */
+@view-transition {
+  navigation: auto;
 }
 
-@keyframes pageSlideIn {
-  from { opacity: 0; transform: translateX(30px); }
-  to   { opacity: 1; transform: translateX(0); }
+::view-transition-old(root) {
+  animation: 0.15s ease-out both fade-out;
 }
 
-.page-transition-out {
-  animation: pageSlideOut 0.2s ease forwards !important;
+::view-transition-new(root) {
+  animation: 0.15s ease-in both fade-in;
 }
 
-@keyframes pageSlideOut {
-  from { opacity: 1; transform: translateX(0); }
-  to   { opacity: 0; transform: translateX(-30px); }
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* --- CSS Custom Properties --- */

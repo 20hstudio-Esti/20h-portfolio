@@ -2,30 +2,6 @@
    twentyhours studio  -  Main Scripts
    ============================================ */
 
-// --- Page Transitions ---
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href');
-    // Only internal links, not anchors, not external
-    if (
-      href &&
-      !href.startsWith('#') &&
-      !href.startsWith('http') &&
-      !href.startsWith('mailto') &&
-      !href.startsWith('tel') &&
-      !link.hasAttribute('target')
-    ) {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.body.classList.add('page-transition-out');
-        setTimeout(() => {
-          window.location.href = href;
-        }, 200);
-      });
-    }
-  });
-});
-
 // --- Mobile Menu Toggle ---
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav__toggle');
