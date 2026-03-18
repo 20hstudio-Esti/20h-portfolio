@@ -2247,3 +2247,56 @@ div.portfolio-item__image {
 .next-steps-section-light .next-steps__item p {
   color: var(--color-text-secondary);
 }
+
+
+/* ============================================
+   Scroll Stack Effect
+   Meet Esti stays sticky, Services slides over it,
+   Selected Projects reveals from behind Services
+   ============================================ */
+
+.scroll-stack {
+  position: relative;
+}
+
+/* "Meet Esti" — stays sticky while Services slides over */
+.section--sticky {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 1;
+}
+
+/* Services (dark box) — slides over Meet Esti */
+.section--overlay {
+  position: relative;
+  z-index: 2;
+  border-radius: 24px 24px 0 0;
+  margin-top: -24px; /* slight overlap for smooth entry */
+}
+
+/* Selected Projects — starts behind Services, revealed as Services moves away */
+.section--reveal {
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;    /* hides partially behind Services until it scrolls off */
+  padding-top: 120px;   /* compensates so content isn't clipped */
+  background-color: var(--color-bg);
+}
+
+/* Ensure background is solid so layers don't bleed through */
+.section--sticky,
+.section--reveal {
+  background-color: var(--color-bg);
+}
+
+@media (max-width: 768px) {
+  .section--overlay {
+    border-radius: 16px 16px 0 0;
+    margin-top: -16px;
+  }
+
+  .section--reveal {
+    margin-top: -40px;
+    padding-top: 100px;
+  }
+}
