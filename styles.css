@@ -2266,20 +2266,19 @@ div.portfolio-item__image {
   z-index: 1;
 }
 
-/* Services (dark box) — slides over Meet Esti, stays sticky while Selected Work reveals */
+/* Services (dark box) — slides over Meet Esti, then scrolls away upward */
 .section--overlay {
-  position: sticky;
-  top: var(--nav-height);
+  position: relative;
   z-index: 2;
   margin-top: -24px;
 }
 
-/* Selected Projects — starts behind Services, revealed as Services moves away */
+/* Selected Projects — tucked behind Services, revealed top-to-bottom as Services scrolls away */
 .section--reveal {
   position: relative;
   z-index: 1;
-  margin-top: -60px;
-  padding-top: 120px;
+  margin-top: -300px;   /* hidden deep behind Services */
+  padding-top: 360px;   /* compensates so content isn't cut */
   background-color: var(--color-bg);
 }
 
@@ -2295,7 +2294,7 @@ div.portfolio-item__image {
   }
 
   .section--reveal {
-    margin-top: -40px;
-    padding-top: 100px;
+    margin-top: -200px;
+    padding-top: 260px;
   }
 }
