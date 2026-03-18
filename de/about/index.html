@@ -54,8 +54,11 @@
 
   <hr class="section-divider section-divider--padded">
 
+  <!-- Scroll Stack 1 -->
+  <div class="scroll-stack">
+
   <!-- The Story Behind the Name -->
-  <section class="section">
+  <section class="section section--sticky">
     <div class="container">
       <div class="story-section fade-in">
         <div class="story-section__content">
@@ -72,7 +75,7 @@
   </section>
 
   <!-- Skills & Tools -->
-  <section class="section section--dark">
+  <section class="section section--dark section--sticky" style="z-index: 3;">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-header__label">Leistungen</span>
@@ -146,10 +149,15 @@
     </div>
   </section>
 
+  </div><!-- end scroll-stack 1 -->
+
   <hr class="section-divider section-divider--padded">
 
+  <!-- Scroll Stack 2 -->
+  <div class="scroll-stack">
+
   <!-- Testimonial -->
-  <section class="section testimonial-section-light">
+  <section class="section testimonial-section-light section--sticky" style="z-index: 1; background-color: var(--color-bg); padding-bottom: 120px;">
     <div class="container">
       <div class="section-header fade-in" style="text-align: center;">
         <span class="section-header__label">Von Kunden</span>
@@ -184,7 +192,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-section section section--dark">
+  <section class="cta-section section section--dark section--sticky" style="z-index: 2;">
     <div class="container">
       <div class="fade-in">
         <span class="section-header__label">Kontakt</span>
@@ -194,6 +202,8 @@
       </div>
     </div>
   </section>
+
+  </div><!-- end scroll-stack 2 -->
 
   <!-- Footer -->
   <footer class="footer">
