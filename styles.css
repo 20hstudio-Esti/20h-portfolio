@@ -2262,7 +2262,6 @@ div.portfolio-item__image {
   position: sticky;
   top: var(--nav-height);
   z-index: 1;
-  background-color: var(--color-bg);
 }
 
 /* Overlay — slides up over the sticky section before it */
