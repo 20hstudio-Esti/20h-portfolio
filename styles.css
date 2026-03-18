@@ -2257,6 +2257,7 @@ div.portfolio-item__image {
 
 .scroll-stack {
   position: relative;
+  overflow: visible;
 }
 
 /* "Meet Esti" — stays sticky while Services slides over */
@@ -2273,13 +2274,12 @@ div.portfolio-item__image {
   margin-top: -24px;
 }
 
-/* Selected Projects — tucked behind Services via negative margin.
+/* Selected Projects — tucked behind Services via negative margin, no padding hack.
    As Services scrolls away upward, Selected Work is revealed top-to-bottom naturally. */
 .section--reveal {
   position: relative;
   z-index: 1;
-  margin-top: -400px;
-  padding-top: 440px;
+  margin-top: -300px;
   background-color: var(--color-bg);
 }
 
