@@ -2257,7 +2257,6 @@ div.portfolio-item__image {
 
 .scroll-stack {
   position: relative;
-  overflow: visible;
 }
 
 /* "Meet Esti" — stays sticky while Services slides over */
@@ -2265,28 +2264,40 @@ div.portfolio-item__image {
   position: sticky;
   top: var(--nav-height);
   z-index: 1;
+  background-color: var(--color-bg);
 }
 
-/* Services (dark box) — scrolls normally, sits on top */
+/* Services (dark box) — scrolls over Meet Esti, z-index above it */
 .section--overlay {
   position: relative;
   z-index: 2;
   margin-top: -24px;
+  background-color: var(--color-text-secondary);
 }
 
-/* Selected Work — hidden behind Services, revealed top-to-bottom via scroll JS */
+/* Selected Work — pulled up behind Services with negative margin.
+   Fades + slides in from below when it enters the viewport. */
 .section--reveal {
   position: relative;
   z-index: 1;
-  margin-top: -320px;
-  clip-path: inset(320px 0 0 0);
+  margin-top: -200px;
+  padding-top: 200px;
   background-color: var(--color-bg);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-/* Ensure background is solid so layers don't bleed through */
-.section--sticky,
-.section--reveal {
-  background-color: var(--color-bg);
+.section--reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .section--reveal {
+    margin-top: -120px;
+    padding-top: 120px;
+  }
 }
 
 @media (max-width: 768px) {
