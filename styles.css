@@ -2227,23 +2227,28 @@ div.portfolio-item__image {
   padding: 60px 0;
 }
 
+.contact-hero .next-steps__title h2,
 .next-steps-section-light .next-steps__title h2 {
   color: var(--color-text);
 }
 
+.contact-hero .next-steps__number,
 .next-steps-section-light .next-steps__number {
   color: var(--color-text);
   border-color: var(--color-divider);
 }
 
+.contact-hero .next-steps__item,
 .next-steps-section-light .next-steps__item {
   color: var(--color-text);
 }
 
+.contact-hero .next-steps__item h3,
 .next-steps-section-light .next-steps__item h3 {
   color: var(--color-text);
 }
 
+.contact-hero .next-steps__item p,
 .next-steps-section-light .next-steps__item p {
   color: var(--color-text-secondary);
 }
