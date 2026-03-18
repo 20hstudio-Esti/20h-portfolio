@@ -2267,37 +2267,19 @@ div.portfolio-item__image {
   background-color: var(--color-bg);
 }
 
-/* Services (dark box) — scrolls over Meet Esti, z-index above it */
+/* Services (dark box) — scrolls over Meet Esti */
 .section--overlay {
   position: relative;
   z-index: 2;
   margin-top: -24px;
-  background-color: var(--color-text-secondary);
 }
 
-/* Selected Work — pulled up behind Services with negative margin.
-   Fades + slides in from below when it enters the viewport. */
+/* Selected Work — sits behind Services, top clipped by JS clip-path */
 .section--reveal {
   position: relative;
   z-index: 1;
-  margin-top: -200px;
-  padding-top: 200px;
+  margin-top: -250px;
   background-color: var(--color-bg);
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.section--reveal.in-view {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .section--reveal {
-    margin-top: -120px;
-    padding-top: 120px;
-  }
 }
 
 @media (max-width: 768px) {
