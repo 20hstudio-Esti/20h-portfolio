@@ -119,20 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Selected Work: trigger appear effect when What I Do is mostly scrolled past
-  const overlayForReveal = document.querySelector('.section--overlay');
-  const revealEl3 = document.querySelector('.section--reveal');
-  if (overlayForReveal && revealEl3) {
-    function checkReveal3() {
-      // Fire when the bottom of What I Do passes the top 30% of the screen
-      if (overlayForReveal.getBoundingClientRect().bottom < window.innerHeight * 0.3) {
-        revealEl3.classList.add('in-view');
-        window.removeEventListener('scroll', checkReveal3);
-      }
-    }
-    window.addEventListener('scroll', checkReveal3, { passive: true });
-    checkReveal3();
-  }
+  // Scroll stack handled by CSS sticky
 
   // --- FAQ Accordion (close others when one opens) ---
   const faqItems = document.querySelectorAll('.faq-item');
