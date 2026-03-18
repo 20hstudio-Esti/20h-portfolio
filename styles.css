@@ -2264,6 +2264,11 @@ div.portfolio-item__image {
   z-index: 1;
 }
 
+/* Light sticky sections need explicit bg to not show through */
+.section--sticky:not(.section--dark) {
+  background-color: var(--color-bg);
+}
+
 /* Overlay — slides up over the sticky section before it */
 .section--overlay {
   position: relative;
