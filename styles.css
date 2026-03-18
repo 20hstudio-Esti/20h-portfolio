@@ -2277,9 +2277,23 @@ div.portfolio-item__image {
 .section--reveal {
   position: relative;
   z-index: 1;
-  margin-top: -300px;   /* hidden deep behind Services */
-  padding-top: 360px;   /* compensates so content isn't cut */
+  margin-top: -300px;
+  padding-top: 360px;
   background-color: var(--color-bg);
+}
+
+/* Reveal animation: top-to-bottom wipe + fade as section emerges */
+.section--reveal .reveal-inner {
+  opacity: 0;
+  clip-path: inset(60px 0 0 0);
+  transform: translateY(-16px);
+  transition: opacity 0.7s ease, clip-path 0.7s ease, transform 0.7s ease;
+}
+
+.section--reveal.in-view .reveal-inner {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  transform: translateY(0);
 }
 
 /* Ensure background is solid so layers don't bleed through */

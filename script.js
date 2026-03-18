@@ -119,6 +119,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // --- Scroll Stack Reveal (Selected Work emerges from behind What I Do) ---
+  const revealSection = document.querySelector('.section--reveal');
+  if (revealSection) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            revealSection.classList.add('in-view');
+            revealObserver.unobserve(revealSection);
+          }
+        });
+      },
+      { threshold: 0.08 }
+    );
+    revealObserver.observe(revealSection);
+  }
+
   // --- FAQ Accordion (close others when one opens) ---
   const faqItems = document.querySelectorAll('.faq-item');
   if (faqItems.length > 0) {
