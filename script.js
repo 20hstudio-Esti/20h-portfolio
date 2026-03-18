@@ -119,21 +119,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- Scroll Stack Reveal (Selected Work emerges from behind What I Do) ---
+  // --- Scroll Stack: Selected Work hidden behind sticky What I Do, reveals as you scroll ---
+  const overlaySection = document.querySelector('.section--overlay');
   const revealSection = document.querySelector('.section--reveal');
-  if (revealSection) {
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            revealSection.classList.add('in-view');
-            revealObserver.unobserve(revealSection);
-          }
-        });
-      },
-      { threshold: 0.08 }
-    );
-    revealObserver.observe(revealSection);
+  if (overlaySection && revealSection) {
+    // Pull Selected Work up so it starts fully hidden behind What I Do
+    const overlayH = overlaySection.offsetHeight;
+    revealSection.style.marginTop = `-${overlayH}px`;
+    revealSection.style.paddingTop = `${overlayH + 40}px`;
+
+    // Clip-path wipe: start fully clipped, animate open as it scrolls into view
+    const inner = revealSection.querySelector('.reveal-inner');
+    if (inner) {
+      inner.style.clipPath = `inset(${overlayH}px 0 0 0)`;
+      inner.style.transition = 'clip-path 0s'; // no transition until scroll triggers
+
+      window.addEventListener('scroll', () => {
+        const revealTop = revealSection.getBoundingClientRect().top;
+        const windowH = window.innerHeight;
+        // How far Selected Work has scrolled past the top of viewport
+        const scrolled = Math.max(0, windowH - revealTop);
+        const clip = Math.max(0, overlayH - scrolled);
+        inner.style.clipPath = `inset(${clip}px 0 0 0)`;
+      }, { passive: true });
+    }
   }
 
   // --- FAQ Accordion (close others when one opens) ---
