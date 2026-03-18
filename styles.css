@@ -2265,24 +2265,18 @@ div.portfolio-item__image {
   background-color: var(--color-bg);
 }
 
-/* What I Do — scrolls over Meet Esti */
+/* What I Do — scrolls over Meet Esti, sits on top of Selected Work */
 .section--overlay {
   position: relative;
   z-index: 2;
   margin-top: -24px;
 }
 
-/* Selected Work — fade + slide up entrance */
+/* Selected Work — pulled up behind What I Do via negative margin.
+   As What I Do scrolls away upward, Selected Work reveals naturally top-to-bottom. */
 .section--reveal {
   position: relative;
   z-index: 1;
+  margin-top: -160px;
   background-color: var(--color-bg);
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-}
-
-.section--reveal.in-view {
-  opacity: 1;
-  transform: translateY(0);
 }

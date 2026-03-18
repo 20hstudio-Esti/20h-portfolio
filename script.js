@@ -119,19 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Selected Work entrance animation — scroll-based trigger (more reliable across browsers)
-  const revealSection3 = document.querySelector('.section--reveal');
-  if (revealSection3) {
-    function checkReveal3() {
-      const rect = revealSection3.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 80) {
-        revealSection3.classList.add('in-view');
-        window.removeEventListener('scroll', checkReveal3);
-      }
-    }
-    window.addEventListener('scroll', checkReveal3, { passive: true });
-    checkReveal3(); // check on load too
-  }
+  // No extra JS needed for Selected Work reveal
 
   // --- FAQ Accordion (close others when one opens) ---
   const faqItems = document.querySelectorAll('.faq-item');
