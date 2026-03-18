@@ -119,31 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- Scroll Stack: Selected Work hidden behind sticky What I Do, reveals as you scroll ---
-  const overlaySection = document.querySelector('.section--overlay');
-  const revealSection = document.querySelector('.section--reveal');
-  if (overlaySection && revealSection) {
-    // Pull Selected Work up so it starts fully hidden behind What I Do
-    const overlayH = overlaySection.offsetHeight;
-    revealSection.style.marginTop = `-${overlayH}px`;
-    revealSection.style.paddingTop = `${overlayH + 40}px`;
-
-    // Clip-path wipe: start fully clipped, animate open as it scrolls into view
-    const inner = revealSection.querySelector('.reveal-inner');
-    if (inner) {
-      inner.style.clipPath = `inset(${overlayH}px 0 0 0)`;
-      inner.style.transition = 'clip-path 0s'; // no transition until scroll triggers
-
-      window.addEventListener('scroll', () => {
-        const revealTop = revealSection.getBoundingClientRect().top;
-        const windowH = window.innerHeight;
-        // How far Selected Work has scrolled past the top of viewport
-        const scrolled = Math.max(0, windowH - revealTop);
-        const clip = Math.max(0, overlayH - scrolled);
-        inner.style.clipPath = `inset(${clip}px 0 0 0)`;
-      }, { passive: true });
-    }
-  }
+  // Scroll stack: no JS needed — CSS handles the layering
 
   // --- FAQ Accordion (close others when one opens) ---
   const faqItems = document.querySelectorAll('.faq-item');
