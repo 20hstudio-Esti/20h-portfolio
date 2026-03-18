@@ -119,21 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Selected Work: appear when What I Do is 70% scrolled past
-  const overlayForReveal = document.querySelector('.section--overlay');
-  const revealEl3 = document.querySelector('.section--reveal');
-  if (overlayForReveal && revealEl3) {
-    function checkReveal3() {
-      const overlayBottom = overlayForReveal.getBoundingClientRect().bottom;
-      // Trigger when bottom of What I Do is at 70% of viewport height
-      if (overlayBottom < window.innerHeight * 0.7) {
-        revealEl3.classList.add('in-view');
-        window.removeEventListener('scroll', checkReveal3);
-      }
-    }
-    window.addEventListener('scroll', checkReveal3, { passive: true });
-    checkReveal3();
-  }
+  // No extra JS needed
 
   // --- FAQ Accordion (close others when one opens) ---
   const faqItems = document.querySelectorAll('.faq-item');
