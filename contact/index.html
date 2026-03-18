@@ -35,7 +35,8 @@
   <div class="nav-spacer"></div>
 
   <!-- Contact Hero -->
-  <section class="contact-hero section" style="padding-bottom: 40px;">
+  <div class="scroll-stack">
+  <section class="contact-hero section section--sticky" style="padding-bottom: 40px; z-index: 1; background-color: var(--color-bg);">
     <div class="container">
       <span class="section-header__label">Get in Touch</span>
       <h1>Have a project in mind?<br>Let's talk.</h1>
@@ -78,8 +79,7 @@
   </section>
 
   <!-- Contact Form + Info -->
-  <div class="scroll-stack">
-  <section id="contact-form" class="section section--dark-mid contact-main section--sticky" style="z-index: 1;">
+  <section id="contact-form" class="section section--dark-mid contact-main section--overlay" style="z-index: 2; position: relative;">
     <div class="container">
       <p class="fade-in" style="text-align: center; margin-bottom: 40px; color: var(--color-bg); opacity: 0.8; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Every project is unique. Tell me about yours and I'll send you a custom proposal within 24 hours, wherever I am in the world.</p>
       <div class="contact-grid">
@@ -159,9 +159,10 @@
       </div>
     </div>
   </section>
+  </div><!-- end scroll-stack -->
 
   <!-- Footer -->
-  <footer class="footer section--overlay" style="z-index: 2; position: relative;">
+  <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
@@ -201,7 +202,6 @@
       </div>
     </div>
   </footer>
-  </div><!-- end scroll-stack -->
 
   <script src="/script.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
