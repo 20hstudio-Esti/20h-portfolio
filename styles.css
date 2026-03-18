@@ -1224,6 +1224,7 @@ div.portfolio-item__image {
   background-color: #5A4546;
   color: var(--color-bg);
   padding: 64px 0 32px;
+  border-top: 3px solid rgba(245, 242, 236, 0.15);
 }
 
 .footer__inner {
