@@ -2250,40 +2250,17 @@ div.portfolio-item__image {
 
 
 /* ============================================
-   Scroll Stack Effect
-   Meet Esti stays sticky, Services slides over it,
-   Selected Projects reveals from behind Services
+   Selected Work Entrance Animation
+   Fades and slides up when it enters the viewport
    ============================================ */
 
-.scroll-stack {
-  position: relative;
-}
-
-/* "Meet Esti" — stays sticky while Services slides over */
-.section--sticky {
-  position: sticky;
-  top: var(--nav-height);
-  z-index: 1;
-  background-color: var(--color-bg);
-}
-
-/* Services (dark box) — scrolls over Meet Esti */
-.section--overlay {
-  position: relative;
-  z-index: 2;
-  margin-top: -24px;
-}
-
-/* Selected Work — sits behind Services, top clipped by JS clip-path */
 .section--reveal {
-  position: relative;
-  z-index: 1;
-  margin-top: -250px;
-  background-color: var(--color-bg);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
-@media (max-width: 768px) {
-  .section--overlay {
-    margin-top: -16px;
-  }
+.section--reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }

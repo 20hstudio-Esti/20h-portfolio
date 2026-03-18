@@ -119,25 +119,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Selected Work: clip-path wipe from top as What I Do exits viewport
-  const overlayEl2 = document.querySelector('.section--overlay');
-  const revealSection2 = document.querySelector('.section--reveal');
-  if (overlayEl2 && revealSection2) {
-    // Start with top clipped
-    revealSection2.style.clipPath = 'inset(250px 0 0 0 round 0px)';
-
-    function driveReveal() {
-      const oTop = overlayEl2.getBoundingClientRect().top;
-      const oHeight = overlayEl2.offsetHeight;
-      // scrolledIntoOverlay: how many px of overlay have scrolled above top of viewport
-      const scrolledPast = Math.max(0, -oTop);
-      // Clip reduces as scrolledPast increases — fully revealed when scrolledPast >= 250
-      const clip = Math.max(0, 250 - scrolledPast);
-      revealSection2.style.clipPath = `inset(${clip}px 0 0 0 round 0px)`;
+  // Selected Work entrance animation — scroll-based trigger (more reliable across browsers)
+  const revealSection3 = document.querySelector('.section--reveal');
+  if (revealSection3) {
+    function checkReveal3() {
+      const rect = revealSection3.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 80) {
+        revealSection3.classList.add('in-view');
+        window.removeEventListener('scroll', checkReveal3);
+      }
     }
-
-    window.addEventListener('scroll', driveReveal, { passive: true });
-    driveReveal();
+    window.addEventListener('scroll', checkReveal3, { passive: true });
+    checkReveal3(); // check on load too
   }
 
   // --- FAQ Accordion (close others when one opens) ---
