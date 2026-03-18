@@ -260,8 +260,9 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section section section--dark">
+  <!-- CTA scroll stack -->
+  <div class="scroll-stack">
+  <section class="cta-section section section--dark section--sticky" style="z-index: 1;">
     <div class="container">
       <div class="fade-in">
         <span class="section-header__label">Ready?</span>
@@ -271,9 +272,7 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer section--overlay" style="z-index: 2;">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
@@ -313,6 +312,7 @@
       </div>
     </div>
   </footer>
+  </div><!-- end CTA scroll-stack -->
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
