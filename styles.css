@@ -2250,11 +2250,33 @@ div.portfolio-item__image {
 
 
 /* ============================================
-   Selected Work Entrance Animation
-   Fades and slides up when it enters the viewport
+   Scroll Stack Effect
    ============================================ */
 
+.scroll-stack {
+  position: relative;
+}
+
+/* Meet Esti — sticky while Services slides over */
+.section--sticky {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 1;
+  background-color: var(--color-bg);
+}
+
+/* What I Do — scrolls over Meet Esti */
+.section--overlay {
+  position: relative;
+  z-index: 2;
+  margin-top: -24px;
+}
+
+/* Selected Work — fade + slide up entrance */
 .section--reveal {
+  position: relative;
+  z-index: 1;
+  background-color: var(--color-bg);
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.9s ease, transform 0.9s ease;
