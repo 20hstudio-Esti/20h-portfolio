@@ -2265,26 +2265,22 @@ div.portfolio-item__image {
   background-color: var(--color-bg);
 }
 
-/* What I Do — STICKY. Stays on screen while Selected Work scrolls up behind it.
-   Once user scrolls past the scroll-stack height, What I Do unsticks and moves up,
-   revealing Selected Work underneath. */
+/* What I Do — scrolls up normally */
 .section--overlay {
-  position: sticky;
-  top: var(--nav-height);
+  position: relative;
   z-index: 2;
   margin-top: -24px;
-  box-shadow: 0 -8px 40px rgba(0,0,0,0.2);
 }
 
-/* Selected Work — in normal flow BELOW the sticky What I Do.
-   It scrolls up from behind as the scroll-stack container ends. */
+/* Selected Work — invisible at first, animates in when What I Do scrolls away */
 .section--reveal {
-  position: relative;
-  z-index: 1;
-  background-color: var(--color-bg);
+  opacity: 0;
+  transform: translateY(60px) scale(0.97);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* scroll-stack: no extra padding needed, sticky handles the reveal */
-.scroll-stack {
-  position: relative;
+.section--reveal.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
