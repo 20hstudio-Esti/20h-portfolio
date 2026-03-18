@@ -119,7 +119,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Scroll stack: no JS needed — CSS handles the layering
+  // Selected Work: scroll-driven clip-path reveal as What I Do exits viewport top
+  const overlayEl = document.querySelector('.section--overlay');
+  const revealEl = document.querySelector('.section--reveal');
+  if (overlayEl && revealEl) {
+    function updateReveal() {
+      const overlayTop = overlayEl.getBoundingClientRect().top;
+      // overlayTop: positive = overlay still below viewport top, negative = scrolled past
+      // Reveal starts when overlay starts leaving viewport (overlayTop < 0)
+      const scrolledPast = Math.max(0, -overlayTop);
+      // scrolledPast goes from 0 (overlay just at top) to overlayEl.offsetHeight (fully gone)
+      const revealAmount = Math.min(scrolledPast, 320);
+      const clip = Math.max(0, 320 - revealAmount);
+      revealEl.style.clipPath = `inset(${clip}px 0 0 0)`;
+    }
+
+    window.addEventListener('scroll', updateReveal, { passive: true });
+    updateReveal();
+  }
 
   // --- FAQ Accordion (close others when one opens) ---
   const faqItems = document.querySelectorAll('.faq-item');

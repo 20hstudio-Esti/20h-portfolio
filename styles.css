@@ -2267,19 +2267,19 @@ div.portfolio-item__image {
   z-index: 1;
 }
 
-/* Services (dark box) — scrolls normally over Meet Esti, z-index above Selected Work */
+/* Services (dark box) — scrolls normally, sits on top */
 .section--overlay {
   position: relative;
   z-index: 2;
   margin-top: -24px;
 }
 
-/* Selected Projects — tucked behind Services via negative margin, no padding hack.
-   As Services scrolls away upward, Selected Work is revealed top-to-bottom naturally. */
+/* Selected Work — hidden behind Services, revealed top-to-bottom via scroll JS */
 .section--reveal {
   position: relative;
   z-index: 1;
-  margin-top: -300px;
+  margin-top: -320px;
+  clip-path: inset(320px 0 0 0);
   background-color: var(--color-bg);
 }
 
