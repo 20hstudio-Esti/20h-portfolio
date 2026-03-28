@@ -1332,6 +1332,11 @@ div.portfolio-item__image {
   .footer__inner {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+    align-items: start;
+  }
+
+  .footer__inner > div {
+    align-self: start;
   }
 
   .footer__brand {
