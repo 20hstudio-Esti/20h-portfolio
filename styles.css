@@ -568,9 +568,10 @@ p {
   .hero h1,
   .portfolio-hero h1,
   .contact-hero h1 {
-    font-size: clamp(1.6rem, 7vw, 2.4rem);
+    font-size: clamp(1.5rem, 6.5vw, 2.2rem);
     max-width: 100%;
     text-wrap: balance;
+    overflow-wrap: break-word;
   }
 
   .hero__subtitle {
@@ -582,6 +583,42 @@ p {
   .nav__logo img {
     height: 56px;
     width: auto;
+  }
+
+  /* Buttons full width on mobile */
+  .hero__buttons .btn {
+    width: auto;
+    min-width: 140px;
+  }
+
+  /* Process image — don't overflow */
+  .process-image {
+    max-width: 100%;
+  }
+
+  /* Next steps grid — 1 col on mobile */
+  .next-steps__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact hero paragraph full width */
+  .contact-hero p,
+  .contact-hero .hero-copy-lines {
+    max-width: 100% !important;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Portfolio hero title */
+  .portfolio-hero h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  /* Languages section — smaller gap, centered */
+  .languages-row {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
