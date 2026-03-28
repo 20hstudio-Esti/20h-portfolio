@@ -2070,7 +2070,8 @@ div.portfolio-item__image {
 
 @media (max-width: 768px) {
   .hero-copy-lines {
-    max-width: 800px !important;
+    max-width: 100% !important;
+    width: 100% !important;
   }
 
   .hero-copy-lines .hero-copy-line {
@@ -2386,6 +2387,11 @@ div.portfolio-item__image {
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+
+  h1, h2, h3, p {
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .story-section__visual img[style*="width: 140%"] {
