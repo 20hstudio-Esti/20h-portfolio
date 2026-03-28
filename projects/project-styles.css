@@ -168,7 +168,11 @@
   }
   
   .project-collage {
-    order: -1;
+    order: 2;
+  }
+  
+  .project-info {
+    order: 1;
   }
 }
 
