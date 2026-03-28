@@ -1855,7 +1855,7 @@ div.portfolio-item__image {
 }
 
 .contact-main .social-link {
-  background-color: rgba(245, 242, 236, 0.15);
+  background-color: var(--color-bg-alt);
   color: #4A3334;
 }
 
