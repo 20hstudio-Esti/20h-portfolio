@@ -1332,6 +1332,7 @@ div.portfolio-item__image {
   .footer__inner {
     grid-template-columns: auto auto auto;
     justify-content: space-between;
+    column-gap: 16px;
     row-gap: 32px;
     align-items: start;
   }
