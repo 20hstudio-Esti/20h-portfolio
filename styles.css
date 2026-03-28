@@ -2407,6 +2407,11 @@ div.portfolio-item__image {
   .section--what-i-do {
     padding-bottom: 120vw !important;
   }
+
+  /* About services sticky section — limit padding so no big empty space */
+  .section--about-services {
+    padding-bottom: var(--section-padding) !important;
+  }
 }
 
 /* 0b. Override inline white-space:nowrap on mobile to prevent overflow */
