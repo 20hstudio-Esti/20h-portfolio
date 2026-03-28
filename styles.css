@@ -1854,6 +1854,16 @@ div.portfolio-item__image {
   color: var(--color-bg);
 }
 
+.contact-main .social-link {
+  background-color: rgba(245, 242, 236, 0.15);
+  color: #4A3334;
+}
+
+.contact-main .social-link:hover {
+  background-color: var(--color-accent);
+  color: #4A3334;
+}
+
 .contact-info {
   padding-top: 16px;
 }
