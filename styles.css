@@ -2373,6 +2373,19 @@ div.portfolio-item__image {
   }
 }
 
+/* 0b-0. Prevent horizontal overflow on mobile */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .story-section__visual img[style*="width: 140%"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
 /* 0b-1. On mobile, sticky sections must never cover the nav */
 @media (max-width: 768px) {
   .section--sticky,
