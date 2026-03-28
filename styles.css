@@ -1346,7 +1346,8 @@ div.portfolio-item__image {
   .footer__bottom {
     flex-direction: column;
     gap: 12px;
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
   }
 }
 
