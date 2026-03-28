@@ -399,8 +399,8 @@ p {
     right: 0;
     bottom: 0;
     flex-direction: column;
-    justify-content: center;
-    padding-top: var(--nav-height);
+    justify-content: flex-start;
+    padding-top: calc(var(--nav-height) + 32px);
     gap: 28px;
     background-color: var(--color-bg);
     z-index: 9998;
