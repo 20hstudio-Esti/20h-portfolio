@@ -2368,9 +2368,18 @@ div.portfolio-item__image {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
     background-color: var(--color-bg);
-    z-index: 1000;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    z-index: 9999;
+    position: fixed;
+    isolation: isolate;
+  }
+}
+
+/* 0b-1. On mobile, sticky sections must never cover the nav */
+@media (max-width: 768px) {
+  .section--sticky,
+  .section--overlay,
+  .scroll-stack {
+    z-index: 1 !important;
   }
 }
 
