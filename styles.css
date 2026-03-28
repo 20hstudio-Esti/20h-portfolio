@@ -394,13 +394,13 @@ p {
 
   .nav__links {
     position: fixed;
-    top: 0;
+    top: var(--nav-height);
     left: 0;
     right: 0;
     bottom: 0;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: calc(var(--nav-height) + 32px);
+    padding-top: 48px;
     gap: 28px;
     background-color: var(--color-bg);
     z-index: 9998;
