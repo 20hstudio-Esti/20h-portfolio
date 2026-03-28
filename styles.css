@@ -1330,15 +1330,10 @@ div.portfolio-item__image {
 
 @media (max-width: 768px) {
   .footer__inner {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 0;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
     row-gap: 32px;
     align-items: start;
-  }
-
-  .footer__inner > div:not(.footer__brand) {
-    padding-left: 16px;
-    border-left: 1px solid rgba(245, 242, 236, 0.15);
   }
 
   .footer__inner > div {
