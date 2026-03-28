@@ -2332,6 +2332,15 @@ div.portfolio-item__image {
   }
 }
 
+/* 0b. Override inline white-space:nowrap on mobile to prevent overflow */
+@media (max-width: 768px) {
+  p span[style*="white-space"],
+  h1 span[style*="white-space"],
+  h2 span[style*="white-space"] {
+    white-space: normal !important;
+  }
+}
+
 /* 1. desktop-only / mobile-only utility classes */
 .desktop-only {
   display: inline;
