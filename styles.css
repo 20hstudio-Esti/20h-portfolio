@@ -1331,7 +1331,8 @@ div.portfolio-item__image {
 @media (max-width: 768px) {
   .footer__inner {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    column-gap: 0;
+    row-gap: 32px;
     align-items: start;
   }
 
@@ -1341,6 +1342,10 @@ div.portfolio-item__image {
 
   .footer__brand {
     grid-column: 1 / -1;
+  }
+
+  .footer__brand p {
+    max-width: 100%;
   }
 
   .footer__bottom {
