@@ -414,6 +414,11 @@ p {
   .nav__links a {
     font-size: 1.2rem;
   }
+
+  .nav__cta {
+    font-size: 1.2rem;
+    padding: 14px 32px;
+  }
 }
 
 /* --- Spacer for fixed nav --- */
