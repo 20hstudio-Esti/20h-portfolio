@@ -2394,22 +2394,17 @@ div.portfolio-item__image {
   }
 }
 
-/* 0b-1. On mobile, disable scroll-stack sticky/overlay effect */
+/* 0b-1. On mobile, sticky sections must never cover the nav */
 @media (max-width: 768px) {
-  .section--sticky {
-    position: relative !important;
-    top: auto !important;
-    z-index: 1 !important;
-  }
-
-  .section--overlay {
-    position: relative !important;
-    margin-top: 0 !important;
-    z-index: 1 !important;
-  }
-
+  .section--sticky,
+  .section--overlay,
   .scroll-stack {
     z-index: 1 !important;
+  }
+
+  /* Give sticky dark sections more padding so overlay doesn't slide up too early */
+  .section--dark.section--sticky {
+    padding-bottom: 480px !important;
   }
 }
 
