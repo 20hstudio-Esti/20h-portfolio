@@ -1526,6 +1526,12 @@ div.portfolio-item__image {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .about-hero__image img {
+    object-position: center 20%;
+  }
+}
+
 .about-hero__content h1 {
   margin-bottom: 24px;
 }
