@@ -2403,12 +2403,14 @@ div.portfolio-item__image {
     z-index: 1 !important;
   }
 
-  /* Home What I Do — reset inline padding on mobile */
+  /* On mobile — disable sticky on What I Do so all cards are visible */
   .section--what-i-do {
+    position: relative !important;
+    top: auto !important;
     padding-bottom: var(--section-padding) !important;
   }
 
-  /* Selected Work — disable overlay sliding effect on mobile, just flow normally */
+  /* Selected Work — disable overlay sliding effect on mobile */
   .section--overlay {
     margin-top: 0 !important;
     position: relative !important;
