@@ -2403,9 +2403,9 @@ div.portfolio-item__image {
     z-index: 1 !important;
   }
 
-  /* Give sticky dark sections more padding so overlay doesn't slide up too early */
+  /* Home "What I Do" sticky section — needs more padding on mobile so overlay doesn't slide up too early */
   .section--dark.section--sticky {
-    padding-bottom: 100vh !important;
+    padding-bottom: 120vw !important;
   }
 }
 
