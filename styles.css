@@ -2404,7 +2404,7 @@ div.portfolio-item__image {
   }
 
   /* Home "What I Do" sticky section — needs more padding on mobile so overlay doesn't slide up too early */
-  .section--dark.section--sticky {
+  .section--what-i-do {
     padding-bottom: 120vw !important;
   }
 }
