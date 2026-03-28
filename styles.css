@@ -1557,7 +1557,7 @@ div.portfolio-item__image {
 
 @media (max-width: 768px) {
   .about-hero__image img {
-    object-position: center 58%;
+    object-position: center 85%;
   }
 }
 
