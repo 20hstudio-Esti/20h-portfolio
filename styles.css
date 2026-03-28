@@ -535,6 +535,29 @@ p {
   white-space: nowrap;
 }
 
+@media (max-width: 768px) {
+  .hero-line {
+    white-space: normal;
+  }
+
+  .hero h1,
+  .portfolio-hero h1,
+  .contact-hero h1 {
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
+    max-width: 100%;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .nav__logo img {
+    height: 56px;
+    width: auto;
+  }
+}
+
 .hero__subtitle {
   font-size: clamp(1.05rem, 2vw, 1.2rem);
   color: var(--color-text-tertiary);
