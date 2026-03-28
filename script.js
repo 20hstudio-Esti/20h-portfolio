@@ -124,16 +124,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.innerWidth > 768) return;
     const whatIDo = document.querySelector('.section--what-i-do');
     if (!whatIDo) return;
-    // Reset padding first to measure real content height
-    whatIDo.style.paddingBottom = '';
-    const contentHeight = whatIDo.scrollHeight;
-    const viewportHeight = window.innerHeight;
-    // Add enough padding so content is fully scrolled before overlay kicks in
-    if (contentHeight < viewportHeight * 1.5) {
-      whatIDo.style.paddingBottom = (viewportHeight * 1.5 - contentHeight + 80) + 'px';
+    // Remove any inline padding first
+    whatIDo.style.removeProperty('padding-bottom');
+    // The section needs to be at least 2x viewport so sticky content is fully seen
+    // before the overlay slides up
+    const sectionRect = whatIDo.getBoundingClientRect();
+    const sectionInnerHeight = whatIDo.querySelector('.container').offsetHeight;
+    const vh = window.innerHeight;
+    const needed = sectionInnerHeight + vh;
+    const current = whatIDo.offsetHeight;
+    if (current < needed) {
+      whatIDo.style.paddingBottom = (needed - current + 64) + 'px';
     }
   }
-  fixScrollStackMobile();
+  // Run after fonts/images load
+  window.addEventListener('load', fixScrollStackMobile);
   window.addEventListener('resize', fixScrollStackMobile);
 
   // --- FAQ Accordion (close others when one opens) ---

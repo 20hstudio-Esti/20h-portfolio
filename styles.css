@@ -2403,10 +2403,7 @@ div.portfolio-item__image {
     z-index: 1 !important;
   }
 
-  /* Home "What I Do" sticky section — let content determine height, no forced padding */
-  .section--what-i-do {
-    padding-bottom: var(--section-padding) !important;
-  }
+  /* padding handled by JS for section--what-i-do on mobile */
 
   /* About services sticky section — limit padding so no big empty space */
   .section--about-services {
