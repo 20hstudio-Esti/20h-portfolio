@@ -167,7 +167,8 @@
     gap: 32px;
   }
   
-  .project-collage {
+  .project-collage,
+  .project-video {
     order: 2;
   }
   
