@@ -2284,3 +2284,59 @@ div.portfolio-item__image {
   position: relative;
   margin-top: -24px;
 }
+
+/* ============================================
+   Mobile Fixes — added 2026-03-28
+   All rules are mobile-only (max-width).
+   Desktop styles are unchanged.
+   ============================================ */
+
+/* 1. desktop-only / mobile-only utility classes */
+.desktop-only {
+  display: inline;
+}
+.mobile-only {
+  display: none;
+}
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  /* br.desktop-only needs block suppression */
+  br.desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inline;
+  }
+}
+
+/* 2. languages-row — reduce gap on small screens */
+@media (max-width: 600px) {
+  .languages-row {
+    gap: 32px;
+    justify-content: center;
+  }
+}
+
+/* 3. contact-form — reduce padding on mobile */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 24px 20px;
+  }
+}
+
+/* 4. next-steps__grid — 2 cols between 480–900px */
+@media (max-width: 900px) and (min-width: 481px) {
+  .next-steps__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+/* 5. base font-size — slightly smaller on mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+}
