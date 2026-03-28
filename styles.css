@@ -388,6 +388,8 @@ p {
 @media (max-width: 768px) {
   .nav__toggle {
     display: flex;
+    position: relative;
+    z-index: 9999;
   }
 
   .nav__links {
