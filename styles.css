@@ -2293,6 +2293,22 @@ div.portfolio-item__image {
    Desktop styles are unchanged.
    ============================================ */
 
+/* 0. Nav mobile — fix backdrop-filter breaking fixed menu background */
+@media (max-width: 768px) {
+  .nav {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: var(--color-bg);
+  }
+
+  .nav__links {
+    top: 0;
+    height: 100dvh;
+    padding-top: calc(var(--nav-height) + 48px);
+    bottom: auto;
+  }
+}
+
 /* 1. desktop-only / mobile-only utility classes */
 .desktop-only {
   display: inline;
