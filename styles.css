@@ -1562,7 +1562,7 @@ div.portfolio-item__image {
 
 @media (max-width: 768px) {
   .about-hero__image img {
-    object-position: center 85%;
+    object-position: center 72%;
   }
 }
 
@@ -1735,7 +1735,7 @@ div.portfolio-item__image {
 
   .about-hero__image {
     order: -1;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
   }
 
   .skills-grid {
