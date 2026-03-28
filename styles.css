@@ -2405,7 +2405,7 @@ div.portfolio-item__image {
 
   /* Give sticky dark sections more padding so overlay doesn't slide up too early */
   .section--dark.section--sticky {
-    padding-bottom: 480px !important;
+    padding-bottom: 100vh !important;
   }
 }
 
