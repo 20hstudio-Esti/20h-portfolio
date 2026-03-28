@@ -413,11 +413,23 @@ p {
 
   .nav__links a {
     font-size: 1.2rem;
+    width: auto !important;
+    min-width: unset !important;
+    justify-content: center !important;
+    text-align: center;
   }
 
-  .nav__cta {
+  .nav__links a.nav__cta {
     font-size: 1.2rem;
-    padding: 14px 32px;
+    height: auto;
+    padding: 14px 40px;
+    width: auto !important;
+  }
+
+  .nav__links a.nav__lang {
+    font-size: 1rem;
+    width: auto !important;
+    padding: 10px 20px;
   }
 }
 
