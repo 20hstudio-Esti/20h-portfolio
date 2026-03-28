@@ -1495,6 +1495,11 @@ div.portfolio-item__image {
 
   .case-study__sidebar {
     position: static;
+    order: 1;
+  }
+
+  .case-study__gallery {
+    order: 2;
   }
 }
 
