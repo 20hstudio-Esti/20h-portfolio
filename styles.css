@@ -545,11 +545,13 @@ p {
   .contact-hero h1 {
     font-size: clamp(1.6rem, 7vw, 2.4rem);
     max-width: 100%;
+    text-wrap: balance;
   }
 
   .hero__subtitle {
     font-size: 1rem;
     max-width: 100%;
+    text-wrap: balance;
   }
 
   .nav__logo img {
