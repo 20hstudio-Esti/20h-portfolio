@@ -2369,6 +2369,8 @@ div.portfolio-item__image {
     backdrop-filter: none;
     background-color: var(--color-bg);
     z-index: 1000;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
 }
 
