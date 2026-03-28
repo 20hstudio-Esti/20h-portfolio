@@ -2511,6 +2511,9 @@ div.portfolio-item__image {
   .mobile-only {
     display: inline;
   }
+  br.mobile-only {
+    display: block;
+  }
 }
 
 /* 2. languages-row — reduce gap on small screens */
