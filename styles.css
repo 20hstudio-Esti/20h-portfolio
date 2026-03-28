@@ -392,17 +392,16 @@ p {
 
   .nav__links {
     position: fixed;
-    top: var(--nav-height);
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 48px;
+    justify-content: center;
+    padding-top: var(--nav-height);
     gap: 28px;
     background-color: var(--color-bg);
-    opacity: 1;
-    z-index: 999;
+    z-index: 9998;
     transform: translateX(100%);
     transition: transform var(--transition);
   }
