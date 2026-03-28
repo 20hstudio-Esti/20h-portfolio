@@ -1318,8 +1318,8 @@ div.portfolio-item__image {
 
 @media (max-width: 768px) {
   .footer__inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
   }
 
   .footer__brand {
@@ -1330,12 +1330,6 @@ div.portfolio-item__image {
     flex-direction: column;
     gap: 12px;
     text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer__inner {
-    grid-template-columns: 1fr;
   }
 }
 
