@@ -2403,7 +2403,10 @@ div.portfolio-item__image {
     z-index: 1 !important;
   }
 
-  /* padding handled by JS for section--what-i-do on mobile */
+  /* Home What I Do — override inline padding-bottom so overlay doesn't rise too early */
+  .section--what-i-do {
+    padding-bottom: calc(100vh + 200px) !important;
+  }
 
   /* About services sticky section — limit padding so no big empty space */
   .section--about-services {
