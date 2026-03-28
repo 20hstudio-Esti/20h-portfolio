@@ -2436,6 +2436,16 @@ div.portfolio-item__image {
     margin-left: 0 !important;
     max-width: 100% !important;
   }
+
+  /* Footer logo smaller on mobile */
+  .footer__brand .nav__logo img {
+    height: 48px;
+  }
+
+  /* Hide section dividers between dark sections on mobile */
+  .section-divider--on-dark {
+    display: none;
+  }
 }
 
 /* 0b-1. On mobile, sticky sections must never cover the nav */
