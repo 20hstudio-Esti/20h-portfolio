@@ -119,7 +119,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Scroll stack handled by CSS sticky
+  // --- Mobile scroll-stack: adjust padding so overlay starts after content ---
+  function fixScrollStackMobile() {
+    if (window.innerWidth > 768) return;
+    const whatIDo = document.querySelector('.section--what-i-do');
+    if (!whatIDo) return;
+    // Reset padding first to measure real content height
+    whatIDo.style.paddingBottom = '';
+    const contentHeight = whatIDo.scrollHeight;
+    const viewportHeight = window.innerHeight;
+    // Add enough padding so content is fully scrolled before overlay kicks in
+    if (contentHeight < viewportHeight * 1.5) {
+      whatIDo.style.paddingBottom = (viewportHeight * 1.5 - contentHeight + 80) + 'px';
+    }
+  }
+  fixScrollStackMobile();
+  window.addEventListener('resize', fixScrollStackMobile);
 
   // --- FAQ Accordion (close others when one opens) ---
   const faqItems = document.querySelectorAll('.faq-item');
