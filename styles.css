@@ -2403,9 +2403,15 @@ div.portfolio-item__image {
     z-index: 1 !important;
   }
 
-  /* Home What I Do — override inline padding-bottom so overlay doesn't rise too early */
+  /* Home What I Do — reset inline padding on mobile */
   .section--what-i-do {
-    padding-bottom: calc(100vh + 200px) !important;
+    padding-bottom: var(--section-padding) !important;
+  }
+
+  /* Selected Work — disable overlay sliding effect on mobile, just flow normally */
+  .section--overlay {
+    margin-top: 0 !important;
+    position: relative !important;
   }
 
   /* About services sticky section — limit padding so no big empty space */
