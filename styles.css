@@ -386,10 +386,16 @@ p {
 }
 
 @media (max-width: 768px) {
+  .nav__inner {
+    position: relative;
+    z-index: 10000;
+    background-color: var(--color-bg);
+  }
+
   .nav__toggle {
     display: flex;
     position: relative;
-    z-index: 9999;
+    z-index: 10000;
   }
 
   .nav__links {
