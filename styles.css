@@ -2299,13 +2299,7 @@ div.portfolio-item__image {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
     background-color: var(--color-bg);
-  }
-
-  .nav__links {
-    top: 0;
-    height: 100dvh;
-    padding-top: calc(var(--nav-height) + 48px);
-    bottom: auto;
+    z-index: 1000;
   }
 }
 
