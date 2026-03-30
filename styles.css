@@ -585,10 +585,15 @@ p {
     width: auto;
   }
 
-  /* Hero buttons — same width on mobile, slightly narrower */
+  /* Hero buttons — same row on mobile */
+  .hero__buttons {
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+
   .hero__buttons .btn {
-    width: 172px;
-    min-width: 172px;
+    width: 156px;
+    min-width: 156px;
     justify-content: center;
   }
 
