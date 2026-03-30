@@ -2452,8 +2452,14 @@ div.portfolio-item__image {
   }
 
   /* Hide section dividers between dark sections on mobile */
-  .section-divider--on-dark {
+  .section-divider--on-dark,
+  .section-divider--dark {
     display: none;
+  }
+
+  /* Remove top border of footer when following dark section */
+  .footer {
+    border-top: none;
   }
 }
 
