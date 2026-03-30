@@ -2468,7 +2468,14 @@ div.portfolio-item__image {
   /* Remove top border of footer when following dark section */
   .footer {
     border-top: none;
-    margin-top: -1px;
+    margin-top: 0;
+  }
+
+  /* Let dark CTA sections overlap footer by 2px to hide any subpixel seam */
+  .cta-section.section--dark {
+    margin-bottom: -2px;
+    position: relative;
+    z-index: 2;
   }
 }
 
