@@ -610,6 +610,11 @@ p {
     grid-template-columns: 1fr !important;
   }
 
+  /* Give contact next-steps extra beige scroll room before next section rises */
+  .next-steps-section-light {
+    padding-bottom: 120px;
+  }
+
   /* Contact hero paragraph full width */
   .contact-hero p,
   .contact-hero .hero-copy-lines {
