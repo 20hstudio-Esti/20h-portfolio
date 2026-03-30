@@ -610,9 +610,9 @@ p {
     grid-template-columns: 1fr !important;
   }
 
-  /* Give contact next-steps more scroll travel before next section rises */
-  .next-steps-section-light {
-    padding-bottom: 240px;
+  /* Give contact sticky section more height so overlay rises later */
+  .section--sticky[style*="background-color: var(--color-bg)"] {
+    padding-bottom: 200px !important;
   }
 
   /* Contact hero paragraph full width */
