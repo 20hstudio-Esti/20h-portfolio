@@ -2452,9 +2452,10 @@ div.portfolio-item__image {
     height: 48px;
   }
 
-  /* Hide section dividers between dark sections on mobile */
+  /* Hide section dividers on mobile */
   .section-divider--on-dark,
-  .section-divider--dark {
+  .section-divider--dark,
+  .section-divider--padded {
     display: none;
   }
 
