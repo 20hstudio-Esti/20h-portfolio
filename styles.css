@@ -2468,6 +2468,7 @@ div.portfolio-item__image {
   /* Remove top border of footer when following dark section */
   .footer {
     border-top: none;
+    margin-top: -1px;
   }
 }
 
