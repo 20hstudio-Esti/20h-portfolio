@@ -219,4 +219,8 @@
   .project-nav {
     padding: 16px;
   }
+
+  .project-slides-grid {
+    grid-template-columns: 1fr;
+  }
 }
