@@ -2426,6 +2426,7 @@ div.portfolio-item__image {
     z-index: 9999;
     position: fixed;
     isolation: isolate;
+    border-bottom: none;
   }
 }
 
