@@ -587,16 +587,16 @@ p {
 
   /* Hero buttons — force two columns on mobile */
   .hero__buttons {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    width: 100%;
-    max-width: 340px;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 340px !important;
   }
 
   .hero__buttons .btn {
-    width: 100%;
-    min-width: 0;
+    width: 100% !important;
+    min-width: 0 !important;
     justify-content: center;
   }
 
