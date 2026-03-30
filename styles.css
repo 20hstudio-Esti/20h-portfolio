@@ -2470,13 +2470,6 @@ div.portfolio-item__image {
     border-top: none;
     margin-top: 0;
   }
-
-  /* Let dark CTA sections overlap footer by 2px to hide any subpixel seam */
-  .cta-section.section--dark {
-    margin-bottom: -2px;
-    position: relative;
-    z-index: 2;
-  }
 }
 
 /* 0b-1. On mobile, sticky sections must never cover the nav */
