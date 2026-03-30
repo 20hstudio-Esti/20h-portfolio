@@ -30,6 +30,26 @@
   align-items: start;
 }
 
+/* Layout variant with slides grid: 30/70 */
+.project-main__inner--with-slides {
+  grid-template-columns: 30% 70%;
+}
+
+/* Slides grid 2 columns */
+.project-slides-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.project-slides-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
 /* Left Column - Project Info */
 .project-info {
   color: var(--color-text);
@@ -166,9 +186,14 @@
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
+  .project-main__inner--with-slides {
+    grid-template-columns: 1fr;
+  }
   
   .project-collage,
-  .project-video {
+  .project-video,
+  .project-slides-grid {
     order: 2;
   }
   
