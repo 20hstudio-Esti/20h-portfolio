@@ -615,6 +615,11 @@ p {
     padding-bottom: 200px !important;
   }
 
+  /* Home Meet Esti — extra scroll room after button before dark section rises */
+  .section--meet-esti {
+    padding-bottom: 180px !important;
+  }
+
   /* Contact hero paragraph full width */
   .contact-hero p,
   .contact-hero .hero-copy-lines {
