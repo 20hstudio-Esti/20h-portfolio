@@ -50,6 +50,18 @@
   object-fit: cover;
 }
 
+/* Slides grid 3 columns variant */
+.project-slides-grid--3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Media stack: video + grid stacked vertically in right column */
+.project-media-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* Left Column - Project Info */
 .project-info {
   color: var(--color-text);
