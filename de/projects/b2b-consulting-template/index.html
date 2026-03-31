@@ -11,6 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/projects/project-styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    .glightbox-container .gslide-image img { max-width: 80vw !important; max-height: 85vh !important; width: auto !important; height: auto !important; margin: 0 auto; border-radius: 8px; }
+    .glightbox-container .ginner-container { max-width: 80vw !important; }
+  </style>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -69,16 +74,16 @@
       </div>
 
       <div class="project-slides-grid">
-        <img src="/images/projects/b2b-consulting/Folie1.jpg" alt="Folie 1" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie10.jpg" alt="Folie 10" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie11.jpg" alt="Folie 11" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie12.jpg" alt="Folie 12" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie14.jpg" alt="Folie 14" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie22.jpg" alt="Folie 22" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie24.jpg" alt="Folie 24" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie30.jpg" alt="Folie 30" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie33.jpg" alt="Folie 33" loading="lazy">
-        <img src="/images/projects/b2b-consulting/Folie41.jpg" alt="Folie 41" loading="lazy">
+        <a href="/images/projects/b2b-consulting/Folie1.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie1.jpg" alt="Folie 1" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie10.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie10.jpg" alt="Folie 10" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie11.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie11.jpg" alt="Folie 11" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie12.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie12.jpg" alt="Folie 12" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie14.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie14.jpg" alt="Folie 14" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie22.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie22.jpg" alt="Folie 22" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie24.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie24.jpg" alt="Folie 24" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie30.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie30.jpg" alt="Folie 30" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie33.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie33.jpg" alt="Folie 33" loading="lazy"></a>
+        <a href="/images/projects/b2b-consulting/Folie41.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/b2b-consulting/Folie41.jpg" alt="Folie 41" loading="lazy"></a>
       </div>
     </div>
   </section>
@@ -151,6 +156,10 @@
   </footer>
 
   <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, zoomable: false, width: '80vw', height: 'auto' });
+  </script>
   <script>lucide.createIcons();</script>
 </body>
 </html>
