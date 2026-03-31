@@ -1487,7 +1487,7 @@ div.portfolio-item__image {
 /* --- Case Study / Project Page --- */
 .case-study {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 30% 70%;
   gap: 64px;
   padding-top: 40px;
 }
