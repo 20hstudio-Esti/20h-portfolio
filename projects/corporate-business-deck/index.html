@@ -11,6 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="../project-styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    .glightbox-container .gslide-image img { max-width: 80vw !important; max-height: 85vh !important; width: auto !important; height: auto !important; margin: 0 auto; border-radius: 8px; }
+    .glightbox-container .ginner-container { max-width: 80vw !important; }
+  </style>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -68,10 +73,24 @@
         </div>
       </div>
 
-      <div class="project-video">
-        <video controls playsinline preload="metadata">
-          <source src="../images/corporate-business-presentation-deck/Corporate Business Presentation Deck.mp4" type="video/mp4">
-        </video>
+      <div class="project-media-stack">
+        <div class="project-video">
+          <video controls playsinline preload="metadata">
+            <source src="../images/corporate-business-presentation-deck/Corporate Business Presentation Deck.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-slides-grid">
+          <a href="/images/projects/corporate-business-deck/Folie3.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie3.jpg" alt="Slide 3" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie4.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie4.jpg" alt="Slide 4" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie5.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie5.jpg" alt="Slide 5" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie6.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie6.jpg" alt="Slide 6" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie7.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie7.jpg" alt="Slide 7" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie8.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie8.jpg" alt="Slide 8" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie12.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie12.jpg" alt="Slide 12" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie14.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie14.jpg" alt="Slide 14" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie15.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie15.jpg" alt="Slide 15" loading="lazy"></a>
+          <a href="/images/projects/corporate-business-deck/Folie17.jpg" class="glightbox" data-gallery="slides"><img src="/images/projects/corporate-business-deck/Folie17.jpg" alt="Slide 17" loading="lazy"></a>
+        </div>
       </div>
     </div>
   </section>
@@ -144,6 +163,10 @@
   </footer>
 
   <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, zoomable: false, width: '80vw', height: 'auto' });
+  </script>
   <script>lucide.createIcons();</script>
 </body>
 </html>
