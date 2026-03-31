@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="../project-styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -75,24 +76,24 @@
           </video>
         </div>
         <div class="project-slides-grid project-slides-grid--3col">
-          <img src="/images/projects/template-showcase/Slide1.png" alt="Slide 1" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide2.png" alt="Slide 2" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide3.png" alt="Slide 3" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide4.png" alt="Slide 4" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide5.png" alt="Slide 5" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide6.png" alt="Slide 6" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide7.png" alt="Slide 7" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide8.png" alt="Slide 8" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide9.png" alt="Slide 9" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide10.png" alt="Slide 10" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide11.png" alt="Slide 11" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide12.png" alt="Slide 12" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide13.png" alt="Slide 13" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide14.png" alt="Slide 14" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide15.png" alt="Slide 15" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide16.png" alt="Slide 16" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide17.png" alt="Slide 17" loading="lazy">
-          <img src="/images/projects/template-showcase/Slide18.png" alt="Slide 18" loading="lazy">
+          <a href="/images/projects/template-showcase/Slide1.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide1.png" alt="Slide 1" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide2.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide2.png" alt="Slide 2" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide3.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide3.png" alt="Slide 3" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide4.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide4.png" alt="Slide 4" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide5.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide5.png" alt="Slide 5" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide6.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide6.png" alt="Slide 6" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide7.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide7.png" alt="Slide 7" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide8.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide8.png" alt="Slide 8" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide9.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide9.png" alt="Slide 9" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide10.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide10.png" alt="Slide 10" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide11.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide11.png" alt="Slide 11" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide12.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide12.png" alt="Slide 12" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide13.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide13.png" alt="Slide 13" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide14.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide14.png" alt="Slide 14" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide15.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide15.png" alt="Slide 15" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide16.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide16.png" alt="Slide 16" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide17.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide17.png" alt="Slide 17" loading="lazy"></a>
+          <a href="/images/projects/template-showcase/Slide18.png" class="glightbox" data-gallery="slides"><img src="/images/projects/template-showcase/Slide18.png" alt="Slide 18" loading="lazy"></a>
         </div>
       </div>
     </div>
@@ -167,5 +168,9 @@
 
   <script src="/script.js"></script>
   <script>lucide.createIcons();</script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+  </script>
 </body>
 </html>
