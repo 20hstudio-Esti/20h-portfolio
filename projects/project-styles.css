@@ -101,6 +101,7 @@
   line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
+  text-align: justify;
 }
 
 /* Right Column - Collage Image */

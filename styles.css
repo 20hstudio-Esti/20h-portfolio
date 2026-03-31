@@ -1572,6 +1572,7 @@ div.portfolio-item__image {
   font-size: 0.95rem;
   color: var(--color-text-secondary);
   line-height: 1.75;
+  text-align: justify;
 }
 
 .case-study__gallery {
