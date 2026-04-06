@@ -206,7 +206,8 @@
   
   .project-collage,
   .project-video,
-  .project-slides-grid {
+  .project-slides-grid,
+  .project-media-stack {
     order: 2;
   }
   
