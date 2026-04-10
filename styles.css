@@ -549,12 +549,14 @@ p {
 
   .nav__lang-switch {
     display: flex;
-    width: auto;
+    width: 180px;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     align-self: center;
-    position: relative;
-    overflow: visible;
+    border: 1px solid rgba(94, 76, 78, 0.22);
+    border-radius: 999px;
+    overflow: hidden;
+    background: transparent;
   }
 
   .nav__lang-switch::before {
@@ -562,37 +564,34 @@ p {
   }
 
   .nav__lang-switch.is-open {
-    box-shadow: none;
-    overflow: hidden;
     border-radius: 22px;
+    background: rgba(245, 242, 236, 0.98);
   }
 
   .nav__lang-trigger {
-    width: 180px;
+    width: 100%;
     justify-content: center;
     font-size: 1rem;
     padding: 10px 24px;
-    border-radius: 999px;
-    border: 1px solid rgba(94, 76, 78, 0.22);
+    border-radius: 0;
+    border: none;
     background: transparent;
   }
 
   .nav__lang-menu {
     position: static !important;
-    left: auto;
-    right: auto;
-    width: 180px;
+    width: 100%;
     min-width: unset;
-    margin-top: -1px;
+    margin-top: 0;
     transform: none;
     box-shadow: none;
     display: none !important;
     opacity: 1;
     pointer-events: auto;
     background: transparent;
-    border: 1px solid rgba(94, 76, 78, 0.22);
-    border-top: none;
-    border-radius: 0 0 22px 22px;
+    border: none;
+    border-top: 1px solid rgba(94, 76, 78, 0.12);
+    border-radius: 0;
     padding: 8px 0;
     overflow: hidden;
   }
@@ -610,9 +609,8 @@ p {
   }
 
   .nav__lang-switch.is-open .nav__lang-trigger {
-    border-radius: 999px 999px 0 0;
-    border-color: rgba(94, 76, 78, 0.22);
-    border-bottom-color: transparent;
+    border-radius: 0;
+    border: none;
     position: relative;
     z-index: 2;
   }
