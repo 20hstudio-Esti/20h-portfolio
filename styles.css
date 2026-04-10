@@ -391,18 +391,18 @@ p {
 
 .nav__lang-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + 2px);
   left: 0;
   right: auto;
-  min-width: 170px;
-  padding: 8px;
-  border: 1px solid var(--color-border);
-  border-radius: 18px;
+  min-width: 130px;
+  padding: 6px;
+  border: 1px solid rgba(94, 76, 78, 0.18);
+  border-radius: 14px;
   background: rgba(245, 242, 236, 0.98);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   transition: all var(--transition);
   z-index: 1100;
 }
