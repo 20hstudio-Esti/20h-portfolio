@@ -393,8 +393,9 @@ p {
   position: absolute;
   top: calc(100% + 2px);
   left: 0;
-  right: auto;
-  min-width: 130px;
+  right: 0;
+  width: 100%;
+  min-width: unset;
   padding: 6px;
   border: 1px solid rgba(94, 76, 78, 0.18);
   border-radius: 14px;
@@ -417,14 +418,15 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 14px;
-  border-radius: 14px;
+  padding: 10px 16px 10px 42px;
+  border-radius: 10px;
   color: #5b4747;
   text-decoration: none;
   font-size: 0.95rem;
   line-height: 1.2;
   transition: background var(--transition), color var(--transition);
   box-shadow: none;
+  white-space: nowrap;
 }
 
 .nav__lang-option:hover {
