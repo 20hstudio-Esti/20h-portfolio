@@ -7,6 +7,71 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav__toggle');
   const links = document.querySelector('.nav__links');
 
+  const langLink = document.querySelector('.nav__links a.nav__lang');
+  if (langLink && links) {
+    const isGerman = window.location.pathname === '/de' || window.location.pathname.startsWith('/de/');
+    const currentCode = isGerman ? 'DE' : 'EN';
+    const currentLabel = isGerman ? 'Deutsch' : 'English';
+    const otherCode = isGerman ? 'EN' : 'DE';
+    const otherLabel = isGerman ? 'English' : 'Deutsch';
+    const currentHref = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+    const otherHref = langLink.getAttribute('href') || (isGerman ? '/' : '/de/');
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'nav__lang-switch';
+    wrapper.innerHTML = `
+      <button type="button" class="nav__lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Language selector">
+        <svg class="nav__lang-globe" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle>
+          <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+        </svg>
+        <span class="nav__lang-code">${currentCode}</span>
+        <svg class="nav__lang-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+      <div class="nav__lang-menu" role="menu">
+        <a href="${currentHref}" class="nav__lang-option is-active" role="menuitem" aria-current="page">
+          <svg class="nav__lang-globe" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle>
+            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+          <span>${currentLabel}</span>
+        </a>
+        <a href="${otherHref}" class="nav__lang-option" role="menuitem">
+          <svg class="nav__lang-globe" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle>
+            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+          <span>${otherLabel}</span>
+        </a>
+      </div>
+    `;
+
+    langLink.replaceWith(wrapper);
+
+    const trigger = wrapper.querySelector('.nav__lang-trigger');
+    const closeDropdown = () => {
+      wrapper.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    };
+
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const isOpen = wrapper.classList.toggle('is-open');
+      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!wrapper.contains(event.target)) closeDropdown();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeDropdown();
+    });
+  }
+
   if (toggle && links) {
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('active');
