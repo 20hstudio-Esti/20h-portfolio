@@ -549,7 +549,7 @@ p {
 
   .nav__lang-switch {
     display: flex;
-    width: 180px;
+    width: auto;
     flex-direction: column;
     align-items: stretch;
     align-self: center;
@@ -569,7 +569,7 @@ p {
   }
 
   .nav__lang-trigger {
-    width: 100%;
+    width: auto;
     justify-content: center;
     font-size: 1rem;
     padding: 10px 24px;
@@ -590,7 +590,6 @@ p {
     pointer-events: auto;
     background: transparent;
     border: none;
-    border-top: 1px solid rgba(94, 76, 78, 0.12);
     border-radius: 0;
     padding: 8px 0;
     overflow: hidden;
