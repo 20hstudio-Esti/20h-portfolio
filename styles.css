@@ -340,7 +340,7 @@ p {
   border: 1px solid rgba(94, 76, 78, 0.22);
   border-radius: 999px;
   background: transparent;
-  transition: background var(--transition), border-radius var(--transition), box-shadow var(--transition);
+  transition: none;
   z-index: 1;
   pointer-events: none;
 }
@@ -406,7 +406,7 @@ p {
   width: 14px;
   height: 14px;
   flex: 0 0 14px;
-  transition: transform var(--transition);
+  transition: none;
 }
 
 .nav__lang-switch.is-open .nav__lang-chevron {
@@ -424,7 +424,7 @@ p {
   background: transparent;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.16s ease;
+  transition: none;
   z-index: 2;
 }
 
