@@ -392,7 +392,8 @@ p {
 .nav__lang-menu {
   position: absolute;
   top: calc(100% + 10px);
-  right: 0;
+  left: 0;
+  right: auto;
   min-width: 170px;
   padding: 8px;
   border: 1px solid var(--color-border);
@@ -431,7 +432,8 @@ p {
 }
 
 .nav__lang-option.is-active {
-  background: rgba(91, 71, 71, 0.08);
+  background: transparent;
+  font-weight: 600;
   text-decoration: none;
 }
 
