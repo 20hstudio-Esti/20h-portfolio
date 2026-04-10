@@ -370,6 +370,7 @@ p {
 .nav__lang-switch.is-open .nav__lang-trigger {
   border-radius: 999px;
   border-color: rgba(94, 76, 78, 0.22);
+  border-bottom-color: transparent;
   box-shadow: none;
 }
 
@@ -613,6 +614,7 @@ p {
   .nav__lang-switch.is-open .nav__lang-trigger {
     border-radius: 999px;
     border-color: rgba(94, 76, 78, 0.22);
+    border-bottom-color: transparent;
     position: relative;
     z-index: 2;
   }
