@@ -401,14 +401,15 @@ p {
 
 .nav__lang-menu {
   position: absolute;
-  top: 0;
+  top: calc(100% - 1px);
   left: 0;
   right: 0;
   width: 100%;
   min-width: unset;
-  padding: 44px 0 8px;
+  padding: 8px 0;
   border: 1px solid rgba(94, 76, 78, 0.18);
-  border-radius: 22px;
+  border-top: none;
+  border-radius: 0 0 22px 22px;
   background: rgba(245, 242, 236, 0.98);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   opacity: 0;
@@ -561,7 +562,7 @@ p {
 
   .nav__lang-menu {
     position: static;
-    margin-top: -42px;
+    margin-top: -1px;
     width: 100%;
     min-width: unset;
     transform: none;
@@ -571,9 +572,10 @@ p {
     pointer-events: auto;
     background: rgba(245, 242, 236, 0.98);
     border: 1px solid rgba(94, 76, 78, 0.18);
-    border-radius: 22px;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
     flex-direction: column;
-    padding: 54px 0 8px;
+    padding: 8px 0;
     overflow: hidden;
   }
 
