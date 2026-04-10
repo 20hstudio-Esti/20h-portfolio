@@ -579,6 +579,11 @@ p {
     overflow: hidden;
   }
 
+  .nav__lang-switch.is-open {
+    overflow: hidden;
+    border-radius: 22px;
+  }
+
   .nav__lang-switch.is-open .nav__lang-menu {
     display: flex;
     flex-direction: column;
@@ -603,6 +608,8 @@ p {
     border-radius: 999px 999px 0 0;
     border-color: rgba(94, 76, 78, 0.22);
     border-bottom-color: transparent;
+    position: relative;
+    z-index: 2;
   }
 }
 
