@@ -423,9 +423,9 @@ p {
   transform: translateY(0);
 }
 
-.nav__lang-option {
-  display: block;
-  padding: 12px 16px 12px 17px;
+.nav__lang-menu .nav__lang-option {
+  display: block !important;
+  padding: 12px 16px 12px 17px !important;
   border-radius: 0;
   color: #5b4747;
   text-decoration: none;
@@ -434,6 +434,7 @@ p {
   transition: background var(--transition), color var(--transition);
   box-shadow: none;
   white-space: nowrap;
+  text-align: left;
 }
 
 .nav__lang-option:hover {
@@ -577,10 +578,10 @@ p {
     flex-direction: column;
   }
 
-  .nav__lang-option {
+  .nav__lang-menu .nav__lang-option {
     width: 100%;
     justify-content: flex-start;
-    padding: 12px 16px 12px 17px;
+    padding: 12px 16px 12px 17px !important;
     font-size: 1rem;
   }
 
