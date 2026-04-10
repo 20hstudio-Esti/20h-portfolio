@@ -339,11 +339,11 @@ p {
   font-weight: 450;
   height: 42px;
   padding: 0 16px;
-  border: 1px solid rgba(94, 76, 78, 0.18);
+  border: 1px solid rgba(94, 76, 78, 0.22);
   border-radius: 999px;
   color: #5b4747;
-  background: rgba(255, 255, 255, 0.55);
-  transition: all var(--transition);
+  background: transparent;
+  transition: color var(--transition);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -353,16 +353,11 @@ p {
   box-shadow: none;
 }
 
-.nav__lang-trigger:hover {
-  border-color: rgba(94, 76, 78, 0.26);
-  color: #5b4747;
-  background: rgba(255, 255, 255, 0.82);
-}
-
+.nav__lang-trigger:hover,
 .nav__lang-switch.is-open .nav__lang-trigger {
-  border-color: rgba(94, 76, 78, 0.18);
-  color: #5b4747;
-  background: rgba(255, 255, 255, 0.55);
+  color: var(--color-accent);
+  border-color: rgba(94, 76, 78, 0.22);
+  background: transparent;
 }
 
 .nav__lang-trigger:focus,
