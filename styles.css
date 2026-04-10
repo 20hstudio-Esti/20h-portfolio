@@ -365,6 +365,8 @@ p {
 
 .nav__lang-switch.is-open .nav__lang-trigger {
   border-radius: 999px;
+  border-color: transparent;
+  box-shadow: none;
 }
 
 .nav__lang-trigger:focus,
@@ -437,9 +439,6 @@ p {
   text-align: left;
 }
 
-.nav__lang-menu .nav__lang-option + .nav__lang-option {
-  border-top: 1px solid rgba(94, 76, 78, 0.12);
-}
 
 .nav__lang-option:hover {
   background: rgba(0, 0, 0, 0.03);
