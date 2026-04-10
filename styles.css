@@ -333,8 +333,27 @@ p {
   z-index: 20;
 }
 
-.nav__lang-switch.is-open {
+.nav__lang-switch::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(94, 76, 78, 0.22);
+  border-radius: 999px;
+  background: transparent;
+  transition: all var(--transition);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav__lang-switch:hover::before {
+  background: rgba(245, 242, 236, 0.98);
+}
+
+.nav__lang-switch.is-open::before {
+  inset: 0 0 -96px 0;
   border-radius: 22px;
+  background: rgba(245, 242, 236, 0.98);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 
 .nav__lang-trigger {
@@ -344,11 +363,11 @@ p {
   font-weight: 450;
   height: 42px;
   padding: 0 16px;
-  border: 1px solid rgba(94, 76, 78, 0.22);
+  border: 0;
   border-radius: 999px;
   color: #5b4747;
   background: transparent;
-  transition: color var(--transition), background var(--transition), border-color var(--transition);
+  transition: color var(--transition);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -363,23 +382,6 @@ p {
 .nav__lang-trigger:hover,
 .nav__lang-switch.is-open .nav__lang-trigger {
   color: var(--color-accent);
-  border-color: rgba(94, 76, 78, 0.22);
-  background: rgba(245, 242, 236, 0.98);
-}
-
-.nav__lang-switch.is-open .nav__lang-trigger {
-  box-shadow: none;
-}
-
-.nav__lang-switch.is-open .nav__lang-trigger::after {
-  content: "";
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: -2px;
-  height: 12px;
-  background: rgba(245, 242, 236, 0.98);
-  z-index: 1;
 }
 
 .nav__lang-trigger:focus,
@@ -413,25 +415,19 @@ p {
 
 .nav__lang-menu {
   position: absolute;
-  top: calc(100% - 10px);
+  top: 42px;
   left: 0;
   right: 0;
   width: 100%;
   min-width: unset;
-  padding: 12px 0 8px;
-  border: 1px solid rgba(94, 76, 78, 0.18);
-  border-top: none;
-  border-radius: 0 0 22px 22px;
-  background: rgba(245, 242, 236, 0.98);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  padding: 6px 0 8px;
+  background: transparent;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-4px);
   transition: all var(--transition);
   z-index: 2;
-  overflow: hidden;
 }
-
 
 .nav__lang-switch.is-open .nav__lang-menu {
   opacity: 1;
@@ -452,7 +448,6 @@ p {
   white-space: nowrap;
   text-align: left;
 }
-
 
 .nav__lang-option:hover {
   background: rgba(0, 0, 0, 0.03);
@@ -562,10 +557,17 @@ p {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
+    overflow: visible;
+  }
+
+  .nav__lang-switch::before {
+    display: none;
   }
 
   .nav__lang-switch.is-open {
     box-shadow: none;
+    overflow: hidden;
+    border-radius: 22px;
   }
 
   .nav__lang-trigger {
@@ -574,6 +576,8 @@ p {
     font-size: 1rem;
     padding: 10px 24px;
     border-radius: 999px;
+    border: 1px solid rgba(94, 76, 78, 0.22);
+    background: rgba(245, 242, 236, 0.98);
   }
 
   .nav__lang-menu {
@@ -593,15 +597,6 @@ p {
     flex-direction: column;
     padding: 8px 0;
     overflow: hidden;
-  }
-
-  .nav__lang-switch.is-open {
-    overflow: hidden;
-    border-radius: 22px;
-  }
-
-  .nav__lang-switch.is-open .nav__lang-trigger::after {
-    display: none;
   }
 
   .nav__lang-switch.is-open .nav__lang-menu {
