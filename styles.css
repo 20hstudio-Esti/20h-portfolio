@@ -428,7 +428,9 @@ p {
 }
 
 .nav__lang-option:hover {
-  background: rgba(0, 0, 0, 0.03);
+  background: var(--color-text);
+  color: var(--color-bg) !important;
+  border-radius: 14px;
 }
 
 .nav__lang-option.is-active {
