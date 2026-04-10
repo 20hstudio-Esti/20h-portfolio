@@ -353,11 +353,16 @@ p {
   box-shadow: none;
 }
 
-.nav__lang-trigger:hover,
-.nav__lang-switch.is-open .nav__lang-trigger {
+.nav__lang-trigger:hover {
   border-color: rgba(94, 76, 78, 0.26);
   color: #5b4747;
   background: rgba(255, 255, 255, 0.82);
+}
+
+.nav__lang-switch.is-open .nav__lang-trigger {
+  border-color: rgba(94, 76, 78, 0.18);
+  color: #5b4747;
+  background: rgba(255, 255, 255, 0.55);
 }
 
 .nav__lang-trigger:focus,
