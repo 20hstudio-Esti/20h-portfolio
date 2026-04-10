@@ -360,11 +360,10 @@ p {
 .nav__lang-switch.is-open .nav__lang-trigger {
   color: var(--color-accent);
   border-color: rgba(94, 76, 78, 0.22);
-  background: transparent;
+  background: rgba(245, 242, 236, 0.98);
 }
 
 .nav__lang-switch.is-open .nav__lang-trigger {
-  background: rgba(245, 242, 236, 0.98);
   border-radius: 999px;
 }
 
@@ -404,11 +403,11 @@ p {
   right: 0;
   width: 100%;
   min-width: unset;
-  padding: 54px 0 0;
+  padding: 44px 0 8px;
   border: 1px solid rgba(94, 76, 78, 0.18);
-  border-radius: 18px;
+  border-radius: 22px;
   background: rgba(245, 242, 236, 0.98);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   opacity: 0;
   pointer-events: none;
   transform: translateY(-4px);
@@ -426,7 +425,7 @@ p {
 
 .nav__lang-menu .nav__lang-option {
   display: block !important;
-  padding: 12px 16px 12px 17px !important;
+  padding: 14px 16px 14px 17px !important;
   border-radius: 0;
   color: #5b4747;
   text-decoration: none;
@@ -436,6 +435,10 @@ p {
   box-shadow: none;
   white-space: nowrap;
   text-align: left;
+}
+
+.nav__lang-menu .nav__lang-option + .nav__lang-option {
+  border-top: 1px solid rgba(94, 76, 78, 0.12);
 }
 
 .nav__lang-option:hover {
@@ -568,9 +571,9 @@ p {
     pointer-events: auto;
     background: rgba(245, 242, 236, 0.98);
     border: 1px solid rgba(94, 76, 78, 0.18);
-    border-radius: 18px;
+    border-radius: 22px;
     flex-direction: column;
-    padding: 54px 0 0;
+    padding: 54px 0 8px;
     overflow: hidden;
   }
 
