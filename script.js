@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     langLink.replaceWith(wrapper);
 
+    const ctaLink = links.querySelector('.nav__cta');
+    if (ctaLink) {
+      ctaLink.insertAdjacentElement('afterend', wrapper);
+    }
+
     const trigger = wrapper.querySelector('.nav__lang-trigger');
     const closeDropdown = () => {
       wrapper.classList.remove('is-open');
