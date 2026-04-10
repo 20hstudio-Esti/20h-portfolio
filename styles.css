@@ -1354,7 +1354,7 @@ div.portfolio-item__image {
 }
 
 .testimonial-carousel {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1432,9 +1432,14 @@ div.portfolio-item__image {
   display: block;
 }
 
+.testimonial-carousel__slide--wide {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .testimonial-carousel__slide--wide p {
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-  line-height: 1.55;
+  font-size: clamp(0.98rem, 1.6vw, 1.2rem);
+  line-height: 1.5;
 }
 
 /* --- Next Steps Section --- */
