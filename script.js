@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const filter = tab.dataset.filter;
 
         portfolioCards.forEach(card => {
-          if (filter === 'all' || card.dataset.category === filter) {
+          const categories = (card.dataset.category || '').split(/\s+/).filter(Boolean);
+          if (filter === 'all' || categories.includes(filter)) {
             card.style.display = '';
             setTimeout(() => {
               card.style.opacity = '1';
