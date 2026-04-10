@@ -368,9 +368,8 @@ p {
 }
 
 .nav__lang-switch.is-open .nav__lang-trigger {
-  border-radius: 999px 999px 0 0;
+  border-radius: 999px;
   border-color: rgba(94, 76, 78, 0.22);
-  border-bottom-color: transparent;
   box-shadow: none;
 }
 
@@ -405,15 +404,14 @@ p {
 
 .nav__lang-menu {
   position: absolute;
-  top: calc(100% - 1px);
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
   min-width: unset;
-  padding: 8px 0;
+  padding: 50px 0 8px;
   border: 1px solid rgba(94, 76, 78, 0.18);
-  border-top: none;
-  border-radius: 0 0 22px 22px;
+  border-radius: 22px;
   background: rgba(245, 242, 236, 0.98);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   opacity: 0;
@@ -613,9 +611,8 @@ p {
   }
 
   .nav__lang-switch.is-open .nav__lang-trigger {
-    border-radius: 999px 999px 0 0;
+    border-radius: 999px;
     border-color: rgba(94, 76, 78, 0.22);
-    border-bottom-color: transparent;
     position: relative;
     z-index: 2;
   }
