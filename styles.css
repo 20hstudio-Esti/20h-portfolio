@@ -1354,7 +1354,7 @@ div.portfolio-item__image {
 }
 
 .testimonial-carousel {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1397,6 +1397,8 @@ div.portfolio-item__image {
 
 .testimonial-carousel__slide {
   display: none;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .testimonial-carousel__slide.active {
@@ -1433,14 +1435,15 @@ div.portfolio-item__image {
 }
 
 .testimonial-carousel__slide--wide {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
 .testimonial-carousel__slide--wide p {
-  font-size: clamp(0.95rem, 1.35vw, 1.12rem);
-  line-height: 1.45;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* --- Next Steps Section --- */
