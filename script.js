@@ -32,17 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
       </button>
       <div class="nav__lang-menu" role="menu">
         <a href="${currentHref}" class="nav__lang-option is-active" role="menuitem" aria-current="page">
-          <svg class="nav__lang-globe" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle>
-            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-          </svg>
           <span>${currentLabel}</span>
         </a>
         <a href="${otherHref}" class="nav__lang-option" role="menuitem">
-          <svg class="nav__lang-globe" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle>
-            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-          </svg>
           <span>${otherLabel}</span>
         </a>
       </div>

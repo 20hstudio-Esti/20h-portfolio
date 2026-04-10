@@ -533,7 +533,7 @@ p {
   .nav__lang-switch {
     width: auto;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
   }
 
