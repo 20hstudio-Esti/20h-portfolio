@@ -330,6 +330,7 @@ p {
   position: relative;
   display: inline-flex;
   align-items: center;
+  z-index: 20;
 }
 
 .nav__lang-trigger {
@@ -343,7 +344,7 @@ p {
   border-radius: 999px;
   color: #5b4747;
   background: transparent;
-  transition: color var(--transition);
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -351,6 +352,8 @@ p {
   cursor: pointer;
   text-decoration: none;
   box-shadow: none;
+  position: relative;
+  z-index: 2;
 }
 
 .nav__lang-trigger:hover,
@@ -362,8 +365,6 @@ p {
 
 .nav__lang-switch.is-open .nav__lang-trigger {
   background: rgba(245, 242, 236, 0.98);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
 
 .nav__lang-trigger:focus,
@@ -397,21 +398,21 @@ p {
 
 .nav__lang-menu {
   position: absolute;
-  top: calc(100% - 1px);
+  top: calc(100% - 10px);
   left: 0;
   right: 0;
   width: 100%;
   min-width: unset;
-  padding: 0;
+  padding: 12px 0 0;
   border: 1px solid rgba(94, 76, 78, 0.18);
-  border-radius: 0 0 18px 18px;
+  border-radius: 18px;
   background: rgba(245, 242, 236, 0.98);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   opacity: 0;
   pointer-events: none;
   transform: translateY(-4px);
   transition: all var(--transition);
-  z-index: 1100;
+  z-index: 1;
   overflow: hidden;
 }
 
