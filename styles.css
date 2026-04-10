@@ -596,7 +596,12 @@ p {
     right: 0;
     width: 100%;
     min-width: unset;
-    margin-top: 2px;
+    margin-top: -1px;
+  }
+
+  .nav__lang-switch.is-open .nav__lang-trigger {
+    border-color: rgba(94, 76, 78, 0.22);
+    border-bottom-color: transparent;
   }
 }
 
