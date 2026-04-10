@@ -572,8 +572,16 @@ p {
   .nav__lang-option {
     width: 100%;
     justify-content: flex-start;
-    padding: 12px 16px;
+    padding: 10px 16px;
     font-size: 1rem;
+  }
+
+  .nav__lang-menu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-width: unset;
+    margin-top: 2px;
   }
 }
 
