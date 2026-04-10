@@ -418,7 +418,7 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 16px 10px 42px;
+  padding: 10px 16px;
   border-radius: 10px;
   color: #5b4747;
   text-decoration: none;
