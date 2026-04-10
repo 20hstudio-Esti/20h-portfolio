@@ -422,15 +422,12 @@ p {
   min-width: unset;
   padding: 6px 0 8px;
   background: transparent;
-  opacity: 0;
-  pointer-events: none;
-  transition: none;
+  display: none;
   z-index: 2;
 }
 
 .nav__lang-switch.is-open .nav__lang-menu {
-  opacity: 1;
-  pointer-events: auto;
+  display: block;
 }
 
 .nav__lang-menu .nav__lang-option {
