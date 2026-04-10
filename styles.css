@@ -415,9 +415,7 @@ p {
 }
 
 .nav__lang-option {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: block;
   padding: 10px 16px;
   border-radius: 10px;
   color: #5b4747;
