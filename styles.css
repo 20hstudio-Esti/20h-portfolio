@@ -333,6 +333,12 @@ p {
   z-index: 20;
 }
 
+.nav__lang-switch.is-open {
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
 .nav__lang-trigger {
   appearance: none;
   font: inherit;
@@ -411,7 +417,7 @@ p {
   border-top: none;
   border-radius: 0 0 22px 22px;
   background: rgba(245, 242, 236, 0.98);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-4px);
@@ -550,6 +556,10 @@ p {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
+  }
+
+  .nav__lang-switch.is-open {
+    box-shadow: none;
   }
 
   .nav__lang-trigger {
