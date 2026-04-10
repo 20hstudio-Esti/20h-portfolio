@@ -366,6 +366,7 @@ p {
 .nav__lang-switch.is-open .nav__lang-trigger {
   border-radius: 999px;
   border-color: transparent;
+  border-top-color: rgba(94, 76, 78, 0.22);
   box-shadow: none;
 }
 
