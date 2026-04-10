@@ -399,12 +399,12 @@ p {
 
 .nav__lang-menu {
   position: absolute;
-  top: calc(100% - 14px);
+  top: calc(100% - 1px);
   left: 0;
   right: 0;
   width: 100%;
   min-width: unset;
-  padding: 20px 0 0;
+  padding: 18px 0 0;
   border: 1px solid rgba(94, 76, 78, 0.18);
   border-radius: 18px;
   background: rgba(245, 242, 236, 0.98);
@@ -558,7 +558,7 @@ p {
 
   .nav__lang-menu {
     position: static;
-    margin-top: -10px;
+    margin-top: -1px;
     width: 100%;
     min-width: unset;
     transform: none;
@@ -570,7 +570,7 @@ p {
     border: 1px solid rgba(94, 76, 78, 0.18);
     border-radius: 18px;
     flex-direction: column;
-    padding: 20px 0 0;
+    padding: 18px 0 0;
     overflow: hidden;
   }
 
