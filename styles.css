@@ -340,7 +340,7 @@ p {
   border: 1px solid rgba(94, 76, 78, 0.22);
   border-radius: 999px;
   background: transparent;
-  transition: all var(--transition);
+  transition: background var(--transition), border-radius var(--transition), box-shadow var(--transition);
   z-index: 1;
   pointer-events: none;
 }
@@ -424,15 +424,13 @@ p {
   background: transparent;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-4px);
-  transition: all var(--transition);
+  transition: opacity 0.16s ease;
   z-index: 2;
 }
 
 .nav__lang-switch.is-open .nav__lang-menu {
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(0);
 }
 
 .nav__lang-menu .nav__lang-option {
