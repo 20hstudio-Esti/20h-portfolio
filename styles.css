@@ -2413,9 +2413,9 @@ div.portfolio-item__image {
 /* Keep content visible by default so local/Dropbox HTML previews never show
    large blank gaps or hidden sections while waiting for scroll observers. */
 .fade-in {
-  opacity: 1;
-  transform: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .fade-in.visible {
